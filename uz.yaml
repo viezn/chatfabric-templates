@@ -1,0 +1,471 @@
+about: |
+  <b>[Bot]</b> <b>{{bot_name}}</b>
+
+  <b>Uptime</b> {{w_days}} days, {{w_hours}} hours, {{w_minutes}} minutes и {{w_seconds}} seconds.
+  <b>Msgs since start:</b> {{msg_count}}
+  <b>Msg rate:</b> {{r_hours}} msgs/hr, {{r_days}} msgs/day
+
+  Bot is built on platform @MakeChatBot, version <i>{{version}}</i>
+
+  If you have questions about using platform or bots' development - contact @IAmRocket
+
+  Platform news: @ChatFabric
+achievements_add_all_ok: '<b>[Bot]</b> User `%s` got new achievement:
+
+  %s - %s'
+achievements_rm_all_ok: '<b>[Bot]</b> User `%s` lost achievement:
+
+  %s - %s'
+addrmadmin_owner_add_ok: '<b>[BOT]</b> Foydalanuvchi #%s `%s` admin etib tayinlandi'
+addrmadmin_owner_rm_ok: '<b>[BOT]</b> Foydalanuvchi #%s `%s` adminlikdan ozod etildi'
+addrmmod_admin_add_ok: '<b>[BOT]</b> Foydalanuvchi #%s `%s` moderator etib tayinlandi'
+addrmmod_admin_rm_ok: '<b>[BOT]</b> Foydalanuvchi #%s `%s` moderatorlikdan ozod etildi'
+admin_unban_ok: '<b>[BOT]</b> Foydalanuvchi #%s `%s` chatdan chetlashtirildi'
+am_btn_freeze: ❄️ Freeze
+am_btn_kick: "\U0001F45E Kick"
+am_btn_mute: "\U0001F64A %s"
+am_btn_resident: ⚓️ Resident
+am_btn_textual: "\U0001F524 Textual"
+am_msg: "\U0001F46E\U0001F3FD Moderation for #%s `%s`"
+antiflood_protection: <b>[BOT]</b> Juda ham ko'p habar yuborildi! Suhbatni davom ettirishdan
+  avval biroz kutib turing!
+banned: <b>[BOT]</b> Afsuski siz chatdan chetlashtirildingiz! Demak siz o'zingizni
+  chatda yomon tutgansiz. Bu yerga boshqa yozmang.
+banned_all: '<b>[Bot]</b> #%s %s chatdan chetlashtirildi'
+cancel_btn: ❌ Cancel
+cancelled: <b>[BOT]</b> Cancelled.
+changeid_admin_ok: '<b>[BOT]</b> Foydalanuvchi `%s` ning IDsi #%s ga o''zgartirildi'
+common_btn_back: ↩️
+days_created: <b>%s</b> kun
+document_hidden: 'Hidden document from #%s `%s`:  %s'
+document_hidden_empty: 'Hidden document from #%s `%s`.'
+edition_not_allowed: <b>[BOT]</b> Only resident can edit messages.
+edition_not_support: <b>[BOT]</b> Can't edit this message.
+edition_timeout: <b>[BOT]</b> Message editing timeout.
+filter_armed: <b>[Bot]</b> Afsus, hozirda siz internet maqolalarini havola qilish
+  imkoniyatiga ega emassiz!
+harakiri_all: '<b>[Bot]</b> #%s `%s` makes harakiri and can''t back to chat in %s.'
+harakiri_fail: <b>[BOT]</b> Fail.
+harakiri_msg: <b>[BOT]</b> You make harakiri and you can back to chan in %s.
+help: '<b>[BOT]</b> Mavjud buyruqlar ro''yhati:
+
+
+  /start - <i>Anonim chatga kirish</i>
+
+  /stop - <i>Chatdan chiqish</i>
+
+  /nick - <i>Nikni o''zgartirish</i>
+
+  /list - <i>Chatdagi foydalanuvchilar ro''yhati</i>
+
+  %% - <i>Uchinchi shaxs nomidan yozish</i>
+
+  $ - <i>Write hidden message</i>
+
+  /last - <i>Show last exited users</i>
+
+  /msg - <i>Shahsiy habar yuborish</i>
+
+  /getmsg - <i>Shahsiy habarni qabul qilish</i>
+
+  /notify - <i>Chatdagi habarlar to''g''risida ogohlantirishlar</i>
+
+  /poll - <i>Ovozga qo''yishni boshlash</i>
+
+  /polldone - <i>Ovozga qo''yishni tugatish</i>
+
+  /vote - <i>Ovoz berish</i>
+
+  /invite - <i>Taklifnoma yaratish</i>
+
+  /info [CODE] - <i>Foydalanuvchi haqidagi ma''lumotni ko''rish</i>
+
+  /slap [CODE] - <i>Foydalanuvchini turtish</i>
+
+  /search [TEXT] - <i>Nik bo''yicha foydalanuvchini qidirish</i>
+
+  <i>/harakiri</i> [MINUTES|R] - <i>Make harakiri!</i>
+
+  /ping - <i>bot ishlayotganligini tekshirib ko''rish</i>
+
+  /rules - <i>Chat qoidalari</i>
+
+  /about - <i>Bot haqidagi ma''lumot</i>'
+help_admin: '
+
+
+  <b>Admin buyruqlari:</b>
+
+  /changeid [CODE] [NEW] - <i>Foydalanuvchi IDsini o''zgartirish</i>
+
+  /addmod [CODE] - <i>Moderator tayinlash</i>
+
+  /rmmod [CODE] - <i>Moderatorlikdan ozod etish</i>
+
+  /unban [CODE] - <i>Chetlashtirilgan foydalanuvchini qayta tiklash</i>
+
+  /say [TEXT] - <i>Say from bot</i>
+
+  /poll_kill - <i>Kill poll(danger!)</i>'
+help_moderator: '
+
+
+  <b>Moderator buyruqlari:</b>
+
+  /mute [CODE] [MINUTES] - <i>Foydalanuvchini so''zlashdan mahrum qilish</i>
+
+  /ban [CODE] - <i>Foydalanuvchini chatdan chetlashtirish</i>
+
+  /rename [CODE] [NICK] - <i>Foydalanuvchi nikini o''zgartirish</i>
+
+  /addach [CODE] [ACH] [TEXT] - <i>Add achievement</i>
+
+  /rmach [CODE] [ACH] - <i>Remove achievement</i>
+
+  /kick [CODE] - <i>Foydalanuvchini chatdan chiqarib yuborish</i>
+
+  /resident [CODE] - <i>Rezident maqomini berish</i>
+
+  /freeze [CODE] - <i>Forbid nick change</i>
+
+  /textual [CODE] - <i>Text only mode</i>
+
+  /del - <i>Delete message from chat</i>'
+help_owner: '
+
+
+  <b>Chat egasi buyruqlari:</b>
+
+  /addadmin [CODE] - <i>Admin tayinlash</i>
+
+  /rmadmin [CODE] - <i>Adminlikdan ozod etish</i>
+
+  /options - <i>Chat sozlamalarini ko''rish</i>
+
+  /option [NAME] [VALUE] - <i>Chat sozlamasini o''zgartirish</i>'
+hug_all: |
+  <b> *</b> #{{code_from}} <i>{{nick_from}} hugs </i>#{{code_to}}<i> {{nick_to}}.</i>
+hug_list: |
+  <b>[BOT]</b> Choose a user to hug:
+hug_too_fast: |
+  <b>[BOT]</b> It's not necessary to hugs so often!
+info_ach: '
+
+
+  <b>Achievements:</b>:
+
+
+  %s'
+info_ach_btn: "\U0001F3C6"
+info_ach_none: '
+
+
+  <b>No achievements.</b>'
+info_achievement: '%s - %s'
+info_admin: <b>ADMIN</b>
+info_am_btn: "\U0001F46E\U0001F3FD"
+info_ban: <b>CHETLASHTIRILGAN</b>
+info_bot_banned: <b>RASCAL</b>
+info_fail: <b>[BOT]</b> Ma'lumotni ko'rsatishni imkoni bo'lmadi. Buyruq ishlashi uchun
+  foydalanuvchi IDsini qo'shing.
+info_harakiri: <b>HARAKIRI</b>
+info_hug_btn: "\U0001F917"
+info_last: <b>%s</b> kun oldin
+info_moderator: <b>MODERATOR</b>
+info_msg_btn: ✉️
+info_mute: <b>SO`ZLASHDAN MAHRUM</b>
+info_notify_hugs: <b>HUGS</b>
+info_notify_msg: <b>PRIVATES</b>
+info_notify_off: <b>OFF</b>
+info_notify_reply: <b>REPLIES</b>
+info_notify_slap: <b>SLAPS</b>
+info_offline: <b>OFLAYN</b>
+info_online: <b>ONLAYN</b>
+info_owner: <b>CHAT EGASI</b>
+info_rascal: <b>FROZEN</b>
+info_resident: <b>REZIDENT</b>
+info_slap_btn: ✋️
+info_text_only: <b>TEXT</b>
+info_today: <b>bugun</b>
+info_user: '<b>[BOT]</b> %s #%s `%s` <b>haqida ma''lumot</b>:
+
+  Biz bilan %s dan beri birga
+
+  Oxirgi marta yozdi: %s
+
+  Maqomi: %s
+
+  Notifications: %s'
+info_user_invited: '
+
+
+  <b>Taklifnoma bo''yicha:</b> #%s `%s`'
+invite_invalid: <b>[BOT]</b> Bu taklifnomani kimdir ishlatgan yoki amal qilish muddati
+  tugagan
+invite_invite_only: |
+  <b>[BOT]</b> Bu yopiq chat. Unga kirish uchun taklifnomangiz bo'lishi kerak.
+invite_new_link: |
+  <b>[BOT]</b> Yangi taklifnoma tayyor: https://t.me/{{bot}}?start=invite_{{invite}}
+invite_not_allowed: |
+  <b>[BOT]</b> Siz ushbu buyruqdan foydalana olmaysiz
+ipoll: '<b>[Bot]</b> #%s `%s` put a question:
+
+  <i>%s</i>
+
+
+  %s'
+ipoll_error: <b>[BOT]</b> Poll must contains from 2 to 10 response options. Try again
+  or click /cancel for cancel.
+ipoll_start: '<b>[BOT]</b> You are starting a inline poll!
+
+  Enter the question and answers one by line like this:
+
+
+  <i>Question?
+
+  Answer1
+
+  Answer2
+
+  Answer3</i>
+
+
+  Poll will be valid one hour. Click /cancel for cancel.'
+kicked_all: '<b>[Bot]</b> #%s `%s` is muted for %s.'
+kicked_timeout: <b>[BOT]</b> You're kicked. You can to come back in %s.
+kill_poll_admin_ok: <b>[BOT]</b> Poll killed.
+last: '<b>[BOT]</b> Recently exited:
+
+
+  %s'
+last_days: '%s d. ago'
+last_hours: '%s h. ago'
+last_mins: '%s min. ago'
+last_user: '%s#%s %s, %s'
+list: '<b>[BOT]</b> Chatdagi foydalanuvchilar <i>%s</i>(<i>%s</i> ta dan):
+
+
+  %s'
+list_more_btn: ⏬ Show all ⏬
+list_short_btn: ⏫ Minimize ⏫
+list_user: '%s%s#%s %s'
+message: '%s:  %s'
+message_caption_edited: '& %s:  %s'
+message_caption_edited_empty: '& %s'
+message_edited: '<b>&</b> %s:  %s'
+message_empty: '%s'
+message_hidden: '<b>$</b> %s:  %s'
+moderator_admin_fail: <b>[BOT]</b> Bajarishning iloji yo'q.
+moderator_admin_ok: '<b>[BOT]</b> Foydalanuvchi #%s `%s` yangilandi'
+muted: '<b>[BOT]</b> Siz vaqtincha so''zlashdan mahrum etildingiz. %s daqiqadan keyin
+  suhbatni davom ettirishingiz mumkin.
+
+  Sizning habarlaringiz, foto va stikerlaringiz boshqalarga ko''rinmaydi, bot chatga
+  kirgan yoki chiqqaningiz haqida habar bermaydi. Berilgan vaqt tugashini kuting va
+  boshqa sho''xlik qilmang.
+
+  Siz uchun mavjud buyruqlar: /start va /stop'
+muted_all: '<b>[Bot]</b> #%s `%s` %s minutga so''zlashdan mahrum etildi.'
+mе: ' <b>*</b> <i>`%s`  %s</i>'
+mе_edited: <b>& *</b> <i>`%s`</i> <i>%s</i>
+nick: '<b>[BOT]</b> Hozir sizning nikingiz - `%s`
+
+  Yangi nikni kiriting yoki bekor qilish uchun /cancel ni bosing.'
+nick_all: '<b>[Bot]</b> #%s `%s` nikini `%s` ga o''zgartirdi'
+nick_bad: <b>[BOT]</b> Bu nik to'g'ri kelmaydi.
+nick_canceled: <b>[BOT]</b> Nikni o'zgartirish bekor qilindi.
+nick_frozen: <b>[BOT]</b> You're not allowed to change your nickname.
+nick_taken: <b>[BOT]</b> Bu nik band.
+nick_too_long: <b>[BOT]</b> Juda ham uzun nik.
+nick_user: <b>[BOT]</b> Sizning yangi nikingiz - `%s`
+not_sent: <b>[BOT]</b> Bot joylashuv va kontakt ma'lumotlarini yubormaydi.
+not_started_user: '<b>[BOT]</b> Siz chatda emassiz. Chatga kirish uchun /start ni
+  bosing '
+notification_hashtag: '<b>[BOT]</b> #%s `%s` - #%s <i>dan javob</i>'
+notification_hug: |
+  <b>[BOT]</b> Hug from #{{code_from}} {{nick_from}}.
+notification_replay: '<b>[BOT]</b> #%s `%s` sizga javob berdi.'
+notification_slap: |
+  <b>[BOT]</b> #{{code_from}} {{nick_from}} sizni turtdi.
+
+notificator_btn_hug: ' Hugs'
+notificator_btn_msg: ' Privates'
+notificator_btn_poll: ' Polls'
+notificator_btn_replay: ' Replies'
+notificator_btn_slap: ' Slaps'
+notificator_off: ❌
+notificator_on: ✅
+notificator_settings: '<b>[BOT]</b> Your notifications settings:'
+option_ok: <b>[BOT]</b> Sozlamalar saqlandi
+options_list: "<b>[BOT]</b> Chat sozlamalari:\n\n\U0001F539 <b>closed</b> - yopiq
+  chat(kirish faqat taklifnoma orqali)\nMavjud holatlar: True, False\nHozirdagi holat:
+  <b>%s</b>\n\n\U0001F539 <b>invite_allowed</b> - kim yangi foydalanuvchilarni taklif
+  qila oladi\nMavjud holatlar: all, resident, moderator, admin, owner\nHozirdagi holat:
+  <b>%s</b>\n\n\U0001F539 <b>lang</b> - chat tili\nMavjud holat: ru\nHozirdagi holat:
+  <b>%s</b>\n\n\U0001F539 <b>rules</b> - chat qoidalarini kiritish\nhtml-formatlashdan
+  foydalanishingiz mumkin. Teglarni albatta yopishingiz lozim. Kiritilgan teglar ishlamaydi.
+  Agar hato teglarda bo'lsa, buyruq ishlamaydi.\nHozirdagi holat: /rules ga qarang\n\n\U0001F539
+  <b>silent_start</b> - не показывать сообщения о входе\nТекущее значение: <b>%s</b>\n\n\U0001F539
+  <b>silent_stop</b> - не показывать сообщения о выходе\nТекущее значение: <b>%s</b>\n"
+photo_hidden: 'Hidden photo from #%s `%s`:  %s'
+photo_hidden_empty: 'Hidden photo from #%s `%s`.'
+poll_alredy_active: '<b>[BOT]</b> Ovoz berish o''tkazilmoqda. Ovoz berish uchun savolni
+  #%s `%s` qo''ydi:
+
+  %s
+
+
+  %s ta foydalanuvchi ovoz berdi.
+
+  Ovoz berish uchun /vote buyrug''idan foydalaning.'
+poll_begining: '<b>[BOT]</b> You are starting a poll!
+
+  Enter the question and answers one by line like this:
+
+
+  <i>Question?
+
+  Answer1
+
+  Answer2
+
+  Answer3</i>
+
+
+  Click /cancel for cancel.'
+poll_canceled: <b>[BOT]</b> Ovoz berishni yo'lga boshlash bekor qilindi.
+poll_done: '<b>[Bot]</b> #%s `%s` ning savoli bo''yicha ovoz berish natijalari:
+
+  <i>%s</i>
+
+
+  %s
+
+  Jami ovoz berganlar soni: %s'
+poll_done_fail: <b>[BOT]</b> Ovoz berishni uni boshlagan kishi yoki moderator tugatishi
+  mumkin.
+poll_done_variant: '%s ta ovoz, %s%% - %s
+
+  '
+poll_error: <b>[BOT]</b> Poll must contains from 2 to 10 response options. Try again
+  or click /cancel for cancel.
+poll_in_progress: <b>[BOT]</b> Kimdir ovoz berishni boshladi, ammo tugatishga ulgirmadi.
+  Biroz kuting.
+poll_not_active: <b>[BOT]</b> Ovoz berish o'tkazilmayapti. Ovoz berishni boshlash
+  uchun /poll ni bosing.
+poll_notification: '<b>[Bot]</b> Ovoz berish o''tkazilayapti! #%s `%s` ovozga qo''ydi:
+
+  <i>%s</i>
+
+  /vote buyrug''i orqali ovoz berishingiz mumkin.'
+poll_question_done: <b>[BOT]</b> Savol berildi. Endi 2 tadan 10 tagacha javob variantlarini
+  kiriting yoki bekor qilish uchun /cancel ni bosing.
+poll_started: <b>[BOT]</b> Ovoz berish boshlandi! Ovoz berishni tugatish uchun /polldone
+  ni bosing.
+poll_started_all: '<b>[Bot]</b> Ovoz berish e''lon qilindi! #%s `%s` ovozga qo''ydi:
+
+  <i>%s</i>'
+poll_text_only: <b>[BOT]</b> Faqat matndan foydalaning.
+poll_vote_ended: Ovoz berish yakunlangan
+poll_vote_not_active: Ovoz berish o'tkazilmayapti
+poll_vote_not_voted: <i>Siz hali ovoz bermadingiz</i>
+poll_vote_ok: Sizning ovozingiz qabul qilindi
+poll_vote_question: '<b>[BOT]</b> #%s `%s` ovozga qo''ydi:
+
+  <i>%s</i>
+
+  Sizning variantingiz:
+
+  %s'
+poll_vote_question_variants: '
+
+  Javob variantini tanlang:
+
+  %s'
+poll_vote_unknown_variant: Не знаю такой вариант
+poll_vote_variant: <i>%s</i>
+poll_vote_variants: '<b>%s</b> - <i>%s</i>
+
+  '
+pong: <b>[BOT]</b> <i>pong</i>.
+private_notice: <b>[BOT]</b> Sizni %s ta shahsiy habar kutmoqda.
+receive_private: '<b>[BOT]</b> #%s `%s` dan %s da shahsiy habar:
+
+
+  %s'
+receive_private_audio: '<b>[BOT]</b> Private message(<b>audio</b>) from #%s `%s` at
+  %s.'
+receive_private_btn: "\U0001F4E9 Receive"
+receive_private_document: '<b>[BOT]</b> Private message(<b>document</b>) from #%s
+  `%s` at %s.'
+receive_private_empty: <b>[BOT]</b> Siz uchun shaxsiy habar yo'q.
+receive_private_empty_cq: Siz uchun shaxsiy habar yo'q.
+receive_private_photo: '<b>[BOT]</b> Private message(<b>photo</b>) from #%s `%s` at
+  %s.'
+receive_private_sticker: '<b>[BOT]</b> Private message(<b>sticker</b>) from #%s `%s`
+  at %s.'
+receive_private_video: '<b>[BOT]</b> Private message(<b>video</b>) from #%s `%s` at
+  %s.'
+receive_private_video_note: '<b>[BOT]</b> Private message(<b>video note</b>) from
+  #%s `%s` at %s.'
+receive_private_voice: '<b>[BOT]</b> Private message(<b>voice</b>) from #%s `%s` at
+  %s.'
+renamed: <b>[BOT]</b> Sizni qayta nomlashdi. Sizning yangi nikingiz - `%s`
+renamed_all: '<b>[Bot]</b> #%s `%s` ning niki `%s` ga o''zgartirildi'
+resident_only: <b>[BOT]</b> Very sorry, but this command is only for chat's residents.
+rules: '<b>[BOT] Chat qoidalari:</b>
+
+
+  {{rules}}'
+say: <b>[Bot]</b> %s
+search: '<b>[BOT]</b> Qidiruv natijalari:
+
+
+  %s'
+search_format: '%s `%s`'
+search_nothing: <b>[BOT]</b> Hech narsa topilmadi.
+search_too_many: <i>Juda ham ko'p akkauntlar topildi. So'rovingizni aniqlashtiring.</i>
+send_private_canceled: <b>[BOT]</b> Shahsiy habar yuborish bekor qilindi.
+send_private_fail: <b>[BOT]</b> Yuborilmadi.
+send_private_fail_type: <b>[BOT]</b> Can't send this message.
+send_private_fail_user: <b>[BOT]</b> Bunday foydalanuvchi topilmadi.
+send_private_notice: '<b>[BOT]</b> Sizga #%s `%s` dan shahsiy habar yuborildi.'
+send_private_notice_offline: '<b>[BOT]</b> Sizga #%s `%s` dan shahsiy habar yuborildi.
+  Habarni olish uchun chatga kiring - (/start).'
+send_private_ok: '<b>[BOT]</b> Sizning habaringiz #%s `%s` ga yuborildi.'
+send_private_reply: ✏️ Reply
+send_private_select_user: <b>[BOT]</b> Choose a user.
+send_private_type_cancel: ❌ Cancel
+send_private_type_message: '<b>[BOT]</b> Type and send your message and it will be
+  sent to user #%s `%s`.'
+send_private_type_message_cb: Send message
+show_error_alert: "Can't do this. \U0001F614"
+show_hidden: "\U0001F440 Show"
+slap_all: |
+  <b> *</b> #{{code_from}} <i>{{nick_from}} yengilgina turtki bilan </i>#{{code_to}}<i> {{nick_to}} ni turtdi.</i>
+slap_fail: <b>[BOT]</b> Foydalanuvchini turtish imkoni bo'lmadi. Buyruq ishlashi uchun
+  foydalanuvchi IDsini qo'shing.
+slap_list: '<b>[BOT]</b> Turtish uchun foydalanuvchini tanla:'
+slap_not_allowed: <b>[BOT]</b> Afsuski siz turtish imkoniyatiga ega emassiz!
+slap_too_fast: <b>[BOT]</b> Bunday ko'p turtish odobdan emas!
+start_all: '<b>[Bot]</b> #%s `%s` chatga kirdi'
+start_first_all: '<b>[Bot]</b> #%s `%s` chatga kirdi. <b>U yangi!</b>'
+start_user: '<b>[BOT]</b> Siz chatga kirdingiz. Sizning nikingiz - `%s`. Chatdan chiqish
+  uchun /stop ni bosing '
+started_user: '<b>[BOT]</b> Siz chatdasiz. Chatdan chiqish uchun /stop ni bosing '
+stickers_too_fast: <b>[Bot]</b> Juda ham ko'p stiker yuborildi! Yana %s soniya kutib
+  turing!
+stop_all: '<b>[Bot]</b> #%s `%s` chatdan chiqdi'
+stop_all_banned: '<b>[Bot]</b> #%s `%s` chatdan chiqdi. <b>Bu foydalanuvchi botni
+  bloklab qo''ydi!</b>'
+stop_user: '<b>[BOT]</b> Siz chatdan chiqdingiz. Tezroq qaytishingizni kutamiz!
+
+  Chatga qayta kirish uchun - /start ni bosing '
+unknown_command: <b>[Bot]</b> Bunday buyruq mavjud emas. Mavjud buyruqlarni ko'rish
+  uchun /help ni bosing.
+user_status_symbols: {true: ✅, false: "\U0001F195", owner: ✳️, moderator: "\U0001F506",
+  admin: "\U0001F4A2"}
+user_text_only: <b>[BOT]</b> You're restricted to text only.
+welcome: "<b>[BOT]</b> Anonim chatga hush kelibsiz!\nChatdan chiqish uchun /stop ni
+  bosing \n\nSiz uchun tasodifiy nik tanlandi  - `%s`.\nAgar u sizga yoqmagan bo'lsa,
+  uni ushbu buyruq yordamida o'zgartirishingiz mumkin /nick\n<b>Yoqimli suhbat tilaymiz!</b>"

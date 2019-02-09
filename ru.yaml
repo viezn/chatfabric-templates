@@ -103,6 +103,8 @@ info:
       ✋️
     hug: |
       🤗
+  fail: |
+    <b>[BOT]</b> Пользователь не найден.
   text: |
     <b>[BOT]</b> <b>Информация о</b> {{T('common/symbol', user=user)}} #{{user.code_display}} {{user.nick}}:
     С нами <b>{{user.created|elapsed}}</b>

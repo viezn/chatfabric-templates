@@ -27,7 +27,7 @@ help: |
   /poll - <i>Create a poll</i>
   /polldone - <i>End a poll</i>
   /vote - <i>Vote</i>
-  /invite - <i>Create an invite</i>
+  {%if options.closed%}/invite - <i>Create an invite</i>{{"\n"}}{%endif%}
   /info [CODE] - <i>See information about a user</i>
   /slap [CODE] - <i>Slap a user</i>
   /search [TEXT] - <i>Search a user by a nick</i>
@@ -40,7 +40,7 @@ help: |
   <b>Moderator''s commands:</b>
 
   /mute [CODE] [MINUTES] - <i>Void a user''s voice</i>
-  /ban [CODE] - <i>Ban a user</i>
+  {%if options.silent_cmds%}/sban, {%endif%}/ban [CODE] - <i>Ban a user</i>
   /rename [CODE] [NICK] - <i>Rename a user</i>
   /addach [CODE] [ACH] [TEXT] - <i>Add achievement</i>
   /rmach [CODE] [ACH] - <i>Remove achievement</i>
@@ -364,25 +364,28 @@ owner:
 
       🔹 <b>closed</b> - closed chat(entering by invitation only).
       Possible values: True, False.
-      Current value: <b>{{closed}}</b>.
+      Current value: <b>{{options.closed}}</b>.
 
       🔹 <b>invite_allowed</b> - who can invite new users.
       Possible values: all, resident, moderator, admin, owner.
-      Current value: <b>{{invite_allowed}}</b>.
+      Current value: <b>{{options.invite_allowed}}</b>.
 
       🔹 <b>lang</b> - chat language.
       Possible values: {%for l in langs%}{{l}}{%if not loop.last%}, {%endif%}{%endfor%}.
-      Current value: <b>{{lang}}</b>.
+      Current value: <b>{{options.lang}}</b>.
 
-      🔹 <b>rules</b> - правила чата.
+      🔹 <b>rules</b> - chat's rules.
       Html-formatting can be used. Tags need to be closed necessarily. Attached tags don't work. In case of mistake in tags, commands would not be working.
       Current value: hit /rules.
 
       🔹 <b>silent_start</b> - don't show start messages in chat.
-      Current value: <b>{{silent_start}}</b>.
+      Current value: <b>{{options.silent_start}}</b>.
 
       🔹 <b>silent_stop</b> - don't show stop messages in chat.
-      Current value: <b>{{silent_stop}}</b>.
+      Current value: <b>{{options.silent_stop}}</b>.
+
+      🔹 <b>silent_cmds</b> - allow use silent admin's commands.
+      Current value: <b>{{options.silent_cmds}}</b>.
     ok: |
       <b>[BOT]</b> Setting was saved.
   admins:

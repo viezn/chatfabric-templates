@@ -301,7 +301,7 @@ message:
 
 harakiri:
   all: |
-    <b>[Bot]</b> #{{user.code}} {{user.nick}} сделал себе харакири и не зайдет в чат в течении {{user.harakiri_till|remaining(True)}}.
+    <b>[Bot]</b> #{{user.code_display}} {{user.nick}} сделал себе харакири и не зайдет в чат в течении {{user.harakiri_till|remaining(True)}}.
   text: |
     <b>[BOT]</b> Ты сделал себе harakiri и сможешь зайти в чат только через {{user.harakiri_till|remaining(True)}}.
   fail: |
@@ -314,7 +314,7 @@ nick:
 
     Введи новый ник или нажми /cancel для отмены.
   all: |
-    <b>[Bot]</b> #{{user.code}} {{old_nick}} сменил ник на {{user.nick}}
+    <b>[Bot]</b> #{{user.code_display}} {{old_nick}} сменил ник на {{user.nick}}
   bad: |
     <b>[BOT]</b> Такой ник не подходит.
   canceled: |

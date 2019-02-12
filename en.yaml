@@ -302,7 +302,7 @@ message:
 
 harakiri:
   all: |
-    <b>[Bot]</b> #{{user.code}} {{user.nick}} makes harakiri and can't back to chat in {{user.harakiri_till|remaining(True)}}.
+    <b>[Bot]</b> #{{user.code_display}} {{user.nick}} makes harakiri and can't back to chat in {{user.harakiri_till|remaining(True)}}.
   text: |
     <b>[BOT]</b> You make harakiri and you can back to chan in {{user.harakiri_till|remaining(True)}}.
   fail: |
@@ -314,7 +314,7 @@ nick:
 
     Enter a new nick or press /cancel for cancel.
   all: |
-    <b>[Bot]</b> #{{user.code}} {{old_nick}} changed nick to {{user.nick}}
+    <b>[Bot]</b> #{{user.code_display}} {{old_nick}} changed nick to {{user.nick}}
   bad: |
     <b>[BOT]</b> This nick does not fit.
   canceled: |

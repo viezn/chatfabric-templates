@@ -103,6 +103,23 @@ info:
       ✋️
     hug: |
       🤗
+    more: |
+      ⏬
+    less: |
+      ⏫
+    ignore:
+      menu: |
+        🚯
+      msg: |
+        🚯 Запретить приваты
+      slap: |
+        🚯 Запретить шлепки
+      hug: |
+        🚯 Запретить обнимашки
+      replay: |
+        🚯 Запретить ответы
+      text: |
+        🚯 Игнорировать сообщения
   fail: |
     <b>[BOT]</b> Пользователь не найден.
   text: |
@@ -129,15 +146,24 @@ info:
     {%if user.notify_hugs%}{{ pipe() }}ОБНИМАШКИ{%endif%}
     {%if user.notify_poll%}{{ pipe() }}ГОЛОСОВАНИЯ{%endif%}
     {%else%}ВЫКЛ{%endif%}</b>
+    {% if user._id|string in iam.ignores %}
+
+    🚯 Ты запрещаешь: <b>{% set pipe = joiner(", ") %}{% set ignores = iam.ignores[user._id|string] %}
+    {%if 'msg' in ignores%}{{ pipe() }}ПРИВАТ{%endif%}
+    {%if 'slap' in ignores%}{{ pipe() }}ФОРЕЛЬ{%endif%}
+    {%if 'hug' in ignores%}{{ pipe() }}ОБНИМАШКИ{%endif%}
+    {%if 'replay' in ignores%}{{ pipe() }}ОТВЕТ{%endif%}
+    {%if 'text' in ignores%}{{ pipe() }}СООБЩЕНИЯ{%endif%}</b>
+    {%endif%}
 
     {%if inviter %}<b>По приглашению:</b> {{T('common/symbol', user=inviter)}} #{{inviter.code_display}} {{inviter.nick}}
 
     {%endif%}
     {%if user.ach%}
     <b>Достижения:</b>
-
-    {%for k, v in user.ach.items()%}
+    {%for k, v in user.ach.items()|reverse%}
     {{k}} - {{v}}
+    {% if not all_ach and loop.index == max_ach %}...{% break %}{% endif %}
     {%endfor%}
     {%else%}
     <b>Достижений нет.</b>
@@ -298,6 +324,8 @@ message:
     <b>[BOT]</b> Тебе запрещено отправлять что-либо кроме текста.
   notification: |
     <b>[BOT]</b> Ответ от #{{user.code_display}} {{user.nick}}{%if bot%} в чате @{{bot}}{%endif%}{%if hash%} - #{{hash}}{%endif%}.
+  forbid: |
+    <b>[BOT]</b> Этот юзер (или ты) запретил тебе отвечать на его сообщения. Сообщение не отправлено. 🤷‍♂️
 
 harakiri:
   all: |

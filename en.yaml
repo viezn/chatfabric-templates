@@ -104,6 +104,23 @@ info:
       ✋️
     hug: |
       🤗
+    more: |
+      ⏬
+    less: |
+      ⏫
+    ignore:
+      menu: |
+        🚯
+      msg: |
+        🚯 Forbid privates
+      slap: |
+        🚯 Forbid slaps
+      hug: |
+        🚯 Forbid hugs
+      replay: |
+        🚯 Forbid replies
+      text: |
+        🚯 Ignore messages
   fail: |
     <b>[BOT]</b> User not found.
   text: |
@@ -126,19 +143,28 @@ info:
     {% set pipe = joiner(", ") %}
     {%if user.notify_msg%}{{ pipe() }}PRIVATES{%endif%}
     {%if user.notify_slaps%}{{ pipe() }}SLAPS{%endif%}
-    {%if user.notify_replays%}{{ pipe() }}REPLIES{%endif%}
     {%if user.notify_hugs%}{{ pipe() }}HUGS{%endif%}
+    {%if user.notify_replays%}{{ pipe() }}REPLIES{%endif%}
     {%if user.notify_poll%}{{ pipe() }}POLLS{%endif%}
     {%else%}OFF{%endif%}</b>
+    {% if user._id|string in iam.ignores %}
+
+    🚯 You forbid: <b>{% set pipe = joiner(", ") %}{% set ignores = iam.ignores[user._id|string] %}
+    {%if 'msg' in ignores%}{{ pipe() }}PRIVATES{%endif%}
+    {%if 'slap' in ignores%}{{ pipe() }}SLAPS{%endif%}
+    {%if 'hug' in ignores%}{{ pipe() }}HUGS{%endif%}
+    {%if 'replay' in ignores%}{{ pipe() }}REPLIES{%endif%}
+    {%if 'text' in ignores%}{{ pipe() }}MESSAGES{%endif%}</b>
+    {%endif%}
 
     {%if inviter %}<b>By inviting:</b> {{T('common/symbol', user=inviter)}} #{{inviter.code_display}} {{inviter.nick}}
 
     {%endif%}
     {%if user.ach%}
     <b>Achievements:</b>
-
-    {%for k, v in user.ach.items()%}
+    {%for k, v in user.ach.items()|reverse%}
     {{k}} - {{v}}
+    {% if not all_ach and loop.index == max_ach %}...{% break %}{% endif %}
     {%endfor%}
     {%else%}
     <b>No achievements.</b>
@@ -299,6 +325,8 @@ message:
     <b>[BOT]</b> You're restricted to text only.
   notification: |
     <b>[BOT]</b> Reply from #{{user.code_display}} {{user.nick}}{%if bot%} in chat @{{bot}}{%endif%}{%if hash%} - #{{hash}}{%endif%}.
+  forbid: |
+    <b>[BOT]</b> You (or this user) has forbidden to reply to his messages. Your message was not sent. 🤷‍♂️
 
 harakiri:
   all: |
@@ -385,6 +413,7 @@ owner:
       Current value: <b>{{options.silent_stop}}</b>.
 
       🔹 <b>silent_cmds</b> - allow use silent admin's commands.
+      Current value: <b>{{options.silent_cmds}}</b>.
       Current value: <b>{{options.silent_cmds}}</b>.
     ok: |
       <b>[BOT]</b> Setting was saved.

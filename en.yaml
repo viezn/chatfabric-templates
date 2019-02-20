@@ -164,7 +164,7 @@ info:
     <b>Achievements:</b>
     {%for k, v in user.ach.items()|reverse%}
     {{k}} - {{v}}
-    {% if not all_ach and loop.index == max_ach %}...{% break %}{% endif %}
+    {% if not all_ach and loop.index == max_ach and user.ach|count > max_ach%}...{% break %}{% endif %}
     {%endfor%}
     {%else%}
     <b>No achievements.</b>

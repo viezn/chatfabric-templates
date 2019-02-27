@@ -82,8 +82,6 @@ common:
     {%if user.is_owner%}✳️{%elif user.is_admin%}💢{%elif user.is_moderator%}🔆{%elif user.is_resident%}✅{%else%}🆕{%endif%}
   luna: |
     {%if minutes < 5 and days <= 0%}🌕{%elif minutes < 60 and days <= 0%}🌖{%elif minutes < 60 * 12 and days <= 0%}🌗{%elif hours < 24 and days <= 0%}🌘{%else%}🌑{%endif%}
-  cancelled: |
-    <b>[BOT]</b> Отменено.
   noresident: |
     <b>[BOT]</b> Очень жаль, но эта команда только для резидентов чата.
   unknown: |

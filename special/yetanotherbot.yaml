@@ -44,7 +44,7 @@ hug:
 
   all:
     select: |
-      {{T('hug/all/variants/%s' % range(45)|random, ufrom=ufrom, uto=uto, hash=hash)}}
+      {{T('hug/all/variants/%s' % range(63)|random, ufrom=ufrom, uto=uto, hash=hash)}}
     variants:
       0: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} крепко обнимает </i>#{{uto.code_display}}<i> {{uto.nick}}, так и не решив толком, хочет обнять или придушить{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
@@ -136,6 +136,42 @@ hug:
         <b> *</b> <i>День проходит зря, если</i> #{{ufrom.code_display}} <i>{{ufrom.nick}} не потискает </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       44: |
         <b> *</b> <i>Пока люди встречаются, влюбляются женятся</i> #{{ufrom.code_display}} <i>{{ufrom.nick}} жамкает телеса </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+      45: |
+        <b> *</b> <i>Как никогда оголодав по нежным обнимашкам, </i>#{{ufrom.code_display}} <i>{{ufrom.nick}} набрасывается на </i>#{{uto.code_display}}<i> {{uto.nick}} как только видит его{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+      46: |
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} обнимает </i>#{{uto.code_display}}<i> {{uto.nick}} но понимает,что ему это мало, и ищет глазами кого бы обнять ещё{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+      47: |
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} считает что объятия - это секс в одежде, обнимая </i>#{{uto.code_display}}<i> {{uto.nick}} понимает что его хватит ещё на пару раз{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+      48: |
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} чемпион чатика по обнимашкам доказывает свое превосходство обнимая </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+      49: |
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} думает что нельзя объять того, кого не нет, и проверяет существование </i>#{{uto.code_display}}<i> {{uto.nick}} на деле{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+      50: |
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} чувствует что его душит удав, хотя его всего лишь обнял </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+      51: |
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} тянется обнять </i>#{{uto.code_display}}<i> {{uto.nick}}, но вместо этого его перехватывает команда регбистов{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+      52: |
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} обнимает </i>#{{uto.code_display}}<i> {{uto.nick}} и говорит,что все хорошо, отключая ИВЛ{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+      53: |
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} хотел обнять </i>#{{uto.code_display}}<i> {{uto.nick}} но только после свадьбы{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+      54: |
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} расчетлив и точен, поэтому обняв </i>#{{uto.code_display}}<i> {{uto.nick}} включает таймер{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+      55: |
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} использует купон обнимашек против воли </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+      56: |
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} обнимает </i>#{{uto.code_display}}<i> {{uto.nick}} и это их первые объятия в трезвом состоянии{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+      57: |
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} обнимет </i>#{{uto.code_display}}<i> {{uto.nick}} только если будет конец света{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+      58: |
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} прижимает к себе </i>#{{uto.code_display}}<i> {{uto.nick}} а он возьми и растай{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+      59: |
+        <b> *</b> #{{uto.code_display}} <i>{{uto.nick}} пугает физический контакт и он отталкивает </i>#{{ufrom.code_display}}<i> {{ufrom.nick}} когда тот тянется к нему{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+      60: |
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} совсем не по дружески обнимает </i>#{{uto.code_display}}<i> {{uto.nick}} и увозит в Париж{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+      61: |
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} холодно и он укрывается в объятиях </i>#{{uto.code_display}}<i> {{uto.nick}} чтобы согреться{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+      62: |
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} чувствует навязчивую идею обнимать хороших людей и тянется с обнимашками к </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
 
 ban:
   all:

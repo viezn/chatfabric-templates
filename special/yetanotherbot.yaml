@@ -51,7 +51,7 @@ hug:
       1: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} крепко обнимает </i>#{{uto.code_display}}<i> {{uto.nick}}, так и не решив толком, хочет обнять или придушить{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       2: |
-        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} обнимает </i>#{{uto.code_display}}<i> {{uto.nick}} бесстыдно лапая ягодицы{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} обнимает </i>#{{uto.code_display}}<i> {{uto.nick}}, бесстыдно лапая ягодицы{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       3: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} прижимается всем телом и греется в объятьях </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       4: |
@@ -65,17 +65,17 @@ hug:
       8: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} вплотную прижимает свои сосцы к сосцам </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       9: |
-        <b> *</b> <i>Для эксгибициониста </i>#{{ufrom.code_display}} <i>{{ufrom.nick}}, нет ничего лучше чем голые объятия с </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> <i>Для эксгибициониста </i>#{{ufrom.code_display}} <i>{{ufrom.nick}} нет ничего лучше, чем голые объятия с </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       10: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} подкрадывается сзади и накидывается на </i>#{{uto.code_display}}<i> {{uto.nick}}, заключая в объятия{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       11: |
-        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} липко обнимает </i>#{{uto.code_display}}<i> {{uto.nick}} и они становятся похожими на две слипшиеся макаронины{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} липко обнимает </i>#{{uto.code_display}}<i> {{uto.nick}}, и они становятся похожими на две слипшиеся макаронины{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       12: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} крепко обнимает </i>#{{uto.code_display}}<i> {{uto.nick}}, так и не решив толком, хочет обнять или придушить{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       13: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} сердечно обнимает </i>#{{uto.code_display}}<i> {{uto.nick}}, это первые обнимашки НЕ с мамой{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       14: |
-        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} обнимает </i>#{{uto.code_display}}<i> {{uto.nick}} бесстыдно лапая ягодицы{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} обнимает </i>#{{uto.code_display}}<i> {{uto.nick}}, бесстыдно лапая ягодицы{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       15: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} прижимается всем телом и греется в объятьях </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       16: |
@@ -89,19 +89,19 @@ hug:
       20: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} вплотную прижимает свои сосцы к сосцам </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       21: |
-        <b> *</b> <i>Для эксгибициониста </i>#{{ufrom.code_display}} <i>{{ufrom.nick}}, нет ничего лучше, чем голые объятия с </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> <i>Для эксгибициониста </i>#{{ufrom.code_display}} <i>{{ufrom.nick}} нет ничего лучше, чем голые объятия с </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       22: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} подкрадывается сзади и накидывается на </i>#{{uto.code_display}}<i> {{uto.nick}}, заключая в объятия{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       23: |
-        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} нежно обнимает </i>#{{uto.code_display}}<i> {{uto.nick}} и выигрывает право на повторные объятия вне очереди{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} нежно обнимает </i>#{{uto.code_display}}<i> {{uto.nick}}, и выигрывает право на повторные объятия вне очереди{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       24: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} берёт в охапку </i>#{{uto.code_display}}<i> {{uto.nick}}, утаскивая к себе в пещеру{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       25: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} понимает, что часики тикают, обнимает </i>#{{uto.code_display}}<i> {{uto.nick}} ведя в ЗАГС{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       26: |
-        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} осознал нездоровую зависимость от обнимашек и теперь обнимает всех без разбору, первой жертвой выбрав </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} осознал нездоровую зависимость от обнимашек, и теперь обнимает всех без разбору, первой жертвой выбрав </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       27: |
-        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}}, возжелав почувствовать тепло чужого тела, накидывается с объятиями на </i>#{{uto.code_display}}<i> {{uto.nick}} , разрывая на себе одежду{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}}, возжелав почувствовать тепло чужого тела, накидывается с объятиями на </i>#{{uto.code_display}}<i> {{uto.nick}}, разрывая на себе одежду{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       28: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} - скромняшка, нежно обнимает ногу </i>#{{uto.code_display}}<i> {{uto.nick}} в надежде, что это останется незамеченным{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       29: |
@@ -109,19 +109,19 @@ hug:
       30: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} очень удивляется, зачем </i>#{{uto.code_display}}<i> {{uto.nick}} прячет в кармане банан перед обнимашками{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       31: |
-        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} так горячо обнимает </i>#{{uto.code_display}}<i> {{uto.nick}} , что это становится похоже на прелюдию{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} так горячо обнимает </i>#{{uto.code_display}}<i> {{uto.nick}}, что это становится похоже на прелюдию{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       32: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} притягивается с объятьями к </i>#{{uto.code_display}}<i> {{uto.nick}}, почувствовав силу магнитного поля{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       33: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} накидывается с объятьями на </i>#{{uto.code_display}}<i> {{uto.nick}}, но они однополярны и он улетает в космос{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       34: |
-        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} и </i>#{{uto.code_display}}<i> {{uto.nick}} сливаются в объятьях как два оголенных провода и искры сыплются у них из глаз{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} и </i>#{{uto.code_display}}<i> {{uto.nick}} сливаются в объятьях как два оголенных провода, и искры сыплются у них из глаз{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       35: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} прячет в объятиях </i>#{{uto.code_display}}<i> {{uto.nick}} от суровой реальности{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       36: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} чувствует грусть </i>#{{uto.code_display}}<i> {{uto.nick}} и прижимает к себе во имя утешения{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       37: |
-        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} замечает метеоритный дождь и пытается защитить </i>#{{uto.code_display}}<i> {{uto.nick}} сжимая в объятиях{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} замечает метеоритный дождь и пытается защитить </i>#{{uto.code_display}}<i> {{uto.nick}}, сжимая в объятиях{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       38: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} безвозмездно дарит свои обнимашки </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       39: |
@@ -135,43 +135,43 @@ hug:
       43: |
         <b> *</b> <i>День проходит зря, если</i> #{{ufrom.code_display}} <i>{{ufrom.nick}} не потискает </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       44: |
-        <b> *</b> <i>Пока люди встречаются, влюбляются женятся</i> #{{ufrom.code_display}} <i>{{ufrom.nick}} жамкает телеса </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> <i>Пока люди встречаются, влюбляются, женятся,</i> #{{ufrom.code_display}} <i>{{ufrom.nick}} жамкает телеса </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       45: |
-        <b> *</b> <i>Как никогда оголодав по нежным обнимашкам, </i>#{{ufrom.code_display}} <i>{{ufrom.nick}} набрасывается на </i>#{{uto.code_display}}<i> {{uto.nick}} как только видит его{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> <i>Как никогда оголодав по нежным обнимашкам, </i>#{{ufrom.code_display}} <i>{{ufrom.nick}} набрасывается на </i>#{{uto.code_display}}<i> {{uto.nick}}, как только видит его{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       46: |
-        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} обнимает </i>#{{uto.code_display}}<i> {{uto.nick}} но понимает,что ему это мало, и ищет глазами кого бы обнять ещё{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} обнимает </i>#{{uto.code_display}}<i> {{uto.nick}}, но понимает, что ему этого мало, и ищет глазами кого бы обнять ещё{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       47: |
-        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} считает что объятия - это секс в одежде, обнимая </i>#{{uto.code_display}}<i> {{uto.nick}} понимает что его хватит ещё на пару раз{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} считает что объятия - это секс в одежде, обнимая </i>#{{uto.code_display}}<i> {{uto.nick}} понимает, что его хватит ещё на пару раз{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       48: |
-        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} чемпион чатика по обнимашкам доказывает свое превосходство обнимая </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} - чемпион чатика по обнимашкам, доказывает свое превосходство, обнимая </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       49: |
-        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} думает что нельзя объять того, кого не нет, и проверяет существование </i>#{{uto.code_display}}<i> {{uto.nick}} на деле{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} думает что нельзя объять того, кого нет, и проверяет существование </i>#{{uto.code_display}}<i> {{uto.nick}} на деле{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       50: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} чувствует что его душит удав, хотя его всего лишь обнял </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       51: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} тянется обнять </i>#{{uto.code_display}}<i> {{uto.nick}}, но вместо этого его перехватывает команда регбистов{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       52: |
-        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} обнимает </i>#{{uto.code_display}}<i> {{uto.nick}} и говорит,что все хорошо, отключая ИВЛ{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} обнимает </i>#{{uto.code_display}}<i> {{uto.nick}} и говорит, что все хорошо, отключая ИВЛ{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       53: |
-        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} хотел обнять </i>#{{uto.code_display}}<i> {{uto.nick}} но только после свадьбы{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} хотел обнять </i>#{{uto.code_display}}<i> {{uto.nick}}, но только после свадьбы{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       54: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} расчетлив и точен, поэтому обняв </i>#{{uto.code_display}}<i> {{uto.nick}} включает таймер{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       55: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} использует купон обнимашек против воли </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       56: |
-        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} обнимает </i>#{{uto.code_display}}<i> {{uto.nick}} и это их первые объятия в трезвом состоянии{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} обнимает </i>#{{uto.code_display}}<i> {{uto.nick}}, и это их первые объятия в трезвом состоянии{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       57: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} обнимет </i>#{{uto.code_display}}<i> {{uto.nick}} только если будет конец света{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       58: |
-        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} прижимает к себе </i>#{{uto.code_display}}<i> {{uto.nick}} а он возьми и растай{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} прижимает к себе </i>#{{uto.code_display}}<i> {{uto.nick}}, а он возьми и растай{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       59: |
-        <b> *</b> #{{uto.code_display}} <i>{{uto.nick}} пугает физический контакт и он отталкивает </i>#{{ufrom.code_display}}<i> {{ufrom.nick}} когда тот тянется к нему{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> #{{uto.code_display}} <i>{{uto.nick}} пугает физический контакт, и он отталкивает </i>#{{ufrom.code_display}}<i> {{ufrom.nick}}, когда тот тянется к нему{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       60: |
-        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} совсем не по дружески обнимает </i>#{{uto.code_display}}<i> {{uto.nick}} и увозит в Париж{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} совсем не по дружески обнимает </i>#{{uto.code_display}}<i> {{uto.nick}}, и увозит в Париж{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       61: |
-        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} холодно и он укрывается в объятиях </i>#{{uto.code_display}}<i> {{uto.nick}} чтобы согреться{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} холодно, и он укрывается в объятиях </i>#{{uto.code_display}}<i> {{uto.nick}}, чтобы согреться{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       62: |
-        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} чувствует навязчивую идею обнимать хороших людей и тянется с обнимашками к </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} чувствует навязчивую идею обнимать хороших людей, и тянется с обнимашками к </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
 
 ban:
   all:
@@ -219,7 +219,7 @@ ban:
       19: |
         <b>[Bot]</b> #{{user.code_display}} {{user.nick}} пока не отдаст все, что занял у жителей уютного чатика, будет осваивать бан.
       20: |
-        <b>[Bot]</b> Усомнившись в собственных умственных способностях, #{{user.code_display}} {{user.nick}} превращается из человека в обезьяну и навсегда покидает наш чатик.
+        <b>[Bot]</b> Усомнившись в собственных умственных способностях, #{{user.code_display}} {{user.nick}} превращается из человека в обезьяну, и навсегда покидает наш чатик.
       21: |
         <b>[Bot]</b> Заметив во дворе друганов на падике с семками и пивком, #{{user.code_display}} {{user.nick}} покидает наш чатик навсегда.
       22: |
@@ -299,13 +299,13 @@ mute:
       7: |
         <b>[Bot]</b> #{{user.code_display}} {{user.nick}} думает, что пирсинг это круто и прокалывает язык, но, не может говорить ровно {{user.muted_till|remaining(True)}}.
       8: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} после длительного марафона приносит язык на плече и ничего не скажет ровно {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}}, после длительного марафона, приносит язык на плече и ничего не скажет ровно {{user.muted_till|remaining(True)}}.
       9: |
         <b>[Bot]</b> #{{user.code_display}} {{user.nick}} проделывает эпиляцию языка, рекомендовано молчать ровно {{user.muted_till|remaining(True)}}.
       10: |
         <b>[Bot]</b> #{{user.code_display}} {{user.nick}} случайно путает заклинания и лишает себя речи на {{user.muted_till|remaining(True)}}.
       11: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} прикусывает себе язык, пытаясь съесть Огромный кусок торта, теперь молчит {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} прикусывает себе язык, пытаясь съесть огромный кусок торта, теперь молчит {{user.muted_till|remaining(True)}}.
       12: |
         <b>[Bot]</b> #{{user.code_display}} {{user.nick}} пытается осилить скороговорку и завязывает язык в двойной морской узел, умолкает на {{user.muted_till|remaining(True)}}.
       13: |
@@ -331,7 +331,7 @@ mute:
       23: |
         <b>[Bot]</b> Привязав один конец нитки к входной двери, а второй конец к молочному зубу, #{{user.code_display}} {{user.nick}} замолкает на {{user.muted_till|remaining(True)}} и ждет когда мама вернется с работы.
       24: |
-        <b>[Bot]</b> Вообразив себя злым Волком из сказки про семеро козлят, #{{user.code_display}} {{user.nick}} просит кузнеца сделать тоненький голосочек. Похоже, кузнец перестарался и придется помолчать {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> Вообразив себя злым Волком, из сказки про семеро козлят, #{{user.code_display}} {{user.nick}} просит кузнеца сделать тоненький голосочек. Похоже, кузнец перестарался и придется помолчать {{user.muted_till|remaining(True)}}.
       25: |
         <b>[Bot]</b> Грабители врываются в чат, связывают руки и заклеивают скотчем рот #{{user.code_display}} {{user.nick}}. Группа по освобождению заложников прибудет через {{user.muted_till|remaining(True)}}.
       26: |
@@ -349,7 +349,7 @@ mute:
       32: |
         <b>[Bot]</b> #{{user.code_display}} {{user.nick}} случайно целует металлический поручень на морозе и не может говорить {{user.muted_till|remaining(True)}}.
       33: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} съел не тот гормон, и теперь с грудями он(или без), молча плачет {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} съел не тот гормон, и теперь с грудями он (или без), молча плачет {{user.muted_till|remaining(True)}}.
       34: |
         <b>[Bot]</b> В попытке повторить успех своего кумира Витаса, #{{user.code_display}} {{user.nick}} надрывает голос и не может говорить {{user.muted_till|remaining(True)}}.
       35: |

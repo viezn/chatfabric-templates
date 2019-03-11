@@ -1,7 +1,7 @@
 about: |
   <b>[BOT]</b> <b>{{bot_name}}</b>.
 
-  <b>Uptime:</b> {{started|elapsed(True)}}.
+  <b>Uptime:</b> {{started|elapsed(show_seconds=True)}}.
   <b>Msgs:</b> {{count}}.
   <b>Msg rate:</b> {{r_hours}} msgs/hr, {{r_days}} msgs/day.
 
@@ -123,7 +123,7 @@ info:
   text: |
     <b>[BOT]</b> <b>Информация о</b> {{T('common/symbol', user=user)}} #{{user.code_display}} {{user.nick}}:
     С нами <b>{{user.created|elapsed}}</b>
-    Последний раз писал <b>{{user.last_activity|elapsed(True)}}</b>
+    Последний раз писал <b>{{user.last_activity|elapsed(show_seconds=True)}}</b>
     Статус: <b>{%if user.is_active%}ОНЛАЙН{%else%}ОФЛАЙН{%endif%}
     {%if user.is_owner%}, ВЛАДЕЛЕЦ{%endif%}
     {%if user.is_resident%}, РЕЗИДЕНТ{%endif%}
@@ -327,9 +327,9 @@ message:
 
 harakiri:
   all: |
-    <b>[Bot]</b> #{{user.code_display}} {{user.nick}} сделал себе харакири и не зайдет в чат в течении {{user.harakiri_till|remaining(True)}}.
+    <b>[Bot]</b> #{{user.code_display}} {{user.nick}} сделал себе харакири и не зайдет в чат в течении {{user.harakiri_till|remaining(show_seconds=True)}}.
   text: |
-    <b>[BOT]</b> Ты сделал себе harakiri и сможешь зайти в чат только через {{user.harakiri_till|remaining(True)}}.
+    <b>[BOT]</b> Ты сделал себе harakiri и сможешь зайти в чат только через {{user.harakiri_till|remaining(show_seconds=True)}}.
   fail: |
     <b>[BOT]</b> Ничего не вышло.
     Чтобы команда сработа введи /harakiri и количество минут(от 1 до 10080) или букву <b>R</b>, чтобы число было случайным.
@@ -451,7 +451,7 @@ moderator:
     👮 Модерация #{{user.code_display}} {{user.nick}}.
 
     {%for l in log%}
-    {{l.time.strftime('%m/%d %H:%M')}} {%if l.by%}#{{l.by.code_display}} {%endif%}<b>{{l.action.upper()}}</b> <i>{%if l.data.till%}{{l.data.till|remaining(True, l.time)}}{%endif%}
+    {{l.time.strftime('%m/%d %H:%M')}} {%if l.by%}#{{l.by.code_display}} {%endif%}<b>{{l.action.upper()}}</b> <i>{%if l.data.till%}{{l.data.till|remaining(show_seconds=True, from_time=l.time)}}{%endif%}
     {%if l.data.nick%}{{l.data.nick}}{%endif%}
     {%if l.data.id%}#{{l.data.id}}{%endif%}
     {%if l.data.status is defined%}{%if l.data.status%}ON{%else%}OFF{%endif%}{%endif%}
@@ -478,9 +478,9 @@ ban:
 
 mute:
   all: |
-    <b>[Bot]</b> #{{user.code_display}} {{user.nick}} лишен голоса на {{user.muted_till|remaining(True)}}.
+    <b>[Bot]</b> #{{user.code_display}} {{user.nick}} лишен голоса на {{user.muted_till|remaining(show_seconds=True)}}.
   text: |
-    <b>[BOT]</b> Тебя лишили голоса в чате. Осталось {{user.muted_till|remaining(True)}}.
+    <b>[BOT]</b> Тебя лишили голоса в чате. Осталось {{user.muted_till|remaining(show_seconds=True)}}.
 
     Твои сообщения, фотографии и стикеры не отображаются в чате, бот не сообщает, что ты зашел или вышел. Подожди, пока выйдет время и больше не балуй.
 
@@ -488,9 +488,9 @@ mute:
 
 kick:
   all: |
-    <b>[Bot]</b> #{{user.code_display}} {{user.nick}} выгнан из чата на {{user.kicked_till|remaining(True)}}.
+    <b>[Bot]</b> #{{user.code_display}} {{user.nick}} выгнан из чата на {{user.kicked_till|remaining(show_seconds=True)}}.
   text: |
-    <b>[BOT]</b> Тебя выгнали из чата. Ты сможешь войти назад через {{user.kicked_till|remaining(True)}}.
+    <b>[BOT]</b> Тебя выгнали из чата. Ты сможешь войти назад через {{user.kicked_till|remaining(show_seconds=True)}}.
 
 rename:
   all: |

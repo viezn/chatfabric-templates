@@ -16,9 +16,9 @@ rules:
 about: |
   <b>[Bot]</b> <b>YetAnotherBot</b>, platform version <i>{{version}}</i>.
 
-  <b>Я существую:</b> {{birthday|elapsed(True)}}.
+  <b>Я существую:</b> {{birthday|elapsed(show_seconds=True)}}.
 
-  <b>Uptime:</b> {{started|elapsed(True)}}.
+  <b>Uptime:</b> {{started|elapsed(show_seconds=True)}}.
   <b>Msgs:</b> {{count}}.
   <b>Msg rate:</b> {{r_hours}} msgs/hr, {{r_days}} msgs/day.
 
@@ -283,96 +283,96 @@ mute:
       {{T('mute/all/variants/%s' % range(47)|random, user=user)}}
     variants:
       0: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} считает, что лучше сто раз подумать, чем один раз ляпнуть и замолкает на {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} считает, что лучше сто раз подумать, чем один раз ляпнуть и замолкает на {{user.muted_till|remaining(show_seconds=True)}}.
       1: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} пересчитывает в уме тройной интеграл и замолкает на {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} пересчитывает в уме тройной интеграл и замолкает на {{user.muted_till|remaining(show_seconds=True)}}.
       2: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} как в рот воды набрал и не хочет общаться ни с кем ровно {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} как в рот воды набрал и не хочет общаться ни с кем ровно {{user.muted_till|remaining(show_seconds=True)}}.
       3: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} случаной примерз языком к металлической лестнице и замолкает на {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} случаной примерз языком к металлической лестнице и замолкает на {{user.muted_till|remaining(show_seconds=True)}}.
       4: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} молча думает над своим поведением ровно {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} молча думает над своим поведением ровно {{user.muted_till|remaining(show_seconds=True)}}.
       5: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} не может делать одновременно несколько дел сразу, поэтому гладит шнурки и замолкает на {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} не может делать одновременно несколько дел сразу, поэтому гладит шнурки и замолкает на {{user.muted_till|remaining(show_seconds=True)}}.
       6: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} неудачно обжигает язык от кончика до корня и вынужден замолчать на {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} неудачно обжигает язык от кончика до корня и вынужден замолчать на {{user.muted_till|remaining(show_seconds=True)}}.
       7: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} думает, что пирсинг это круто и прокалывает язык, но, не может говорить ровно {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} думает, что пирсинг это круто и прокалывает язык, но, не может говорить ровно {{user.muted_till|remaining(show_seconds=True)}}.
       8: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}}, после длительного марафона, приносит язык на плече и ничего не скажет ровно {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}}, после длительного марафона, приносит язык на плече и ничего не скажет ровно {{user.muted_till|remaining(show_seconds=True)}}.
       9: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} проделывает эпиляцию языка, рекомендовано молчать ровно {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} проделывает эпиляцию языка, рекомендовано молчать ровно {{user.muted_till|remaining(show_seconds=True)}}.
       10: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} случайно путает заклинания и лишает себя речи на {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} случайно путает заклинания и лишает себя речи на {{user.muted_till|remaining(show_seconds=True)}}.
       11: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} прикусывает себе язык, пытаясь съесть огромный кусок торта, теперь молчит {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} прикусывает себе язык, пытаясь съесть огромный кусок торта, теперь молчит {{user.muted_till|remaining(show_seconds=True)}}.
       12: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} пытается осилить скороговорку и завязывает язык в двойной морской узел, умолкает на {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} пытается осилить скороговорку и завязывает язык в двойной морской узел, умолкает на {{user.muted_till|remaining(show_seconds=True)}}.
       13: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} замолкает... просто замолкает на {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} замолкает... просто замолкает на {{user.muted_till|remaining(show_seconds=True)}}.
       14: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} считает, что молчание - золото и умолкает на {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} считает, что молчание - золото и умолкает на {{user.muted_till|remaining(show_seconds=True)}}.
       15: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} соревнуется в показывании языка с другими жителями чата и проигрывает, придется помолчать {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} соревнуется в показывании языка с другими жителями чата и проигрывает, придется помолчать {{user.muted_till|remaining(show_seconds=True)}}.
       16: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} простужает горло, пытается говорить, но слышны лишь хрипы, уж лучше помолчать {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} простужает горло, пытается говорить, но слышны лишь хрипы, уж лучше помолчать {{user.muted_till|remaining(show_seconds=True)}}.
       17: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} хочет стать чемпионом игры в молчанку, поэтому не произнесет ни звука ровно {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} хочет стать чемпионом игры в молчанку, поэтому не произнесет ни звука ровно {{user.muted_till|remaining(show_seconds=True)}}.
       18: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} вместо ингалятора брызгает в горло перченым баллончиком, придется помолчать {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} вместо ингалятора брызгает в горло перченым баллончиком, придется помолчать {{user.muted_till|remaining(show_seconds=True)}}.
       19: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} хочет сойти за умного образованного человека, будет многозначительно молчать {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} хочет сойти за умного образованного человека, будет многозначительно молчать {{user.muted_till|remaining(show_seconds=True)}}.
       20: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} решил попробовать засунуть себе в рот лампочку и замолкает на {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} решил попробовать засунуть себе в рот лампочку и замолкает на {{user.muted_till|remaining(show_seconds=True)}}.
       21: |
-        <b>[Bot]</b> Со словами “Чики-брики, пальчик выкинь!”, #{{user.code_display}} {{user.nick}} лишается всех десяти пальцев и не может набирать сообщения {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> Со словами “Чики-брики, пальчик выкинь!”, #{{user.code_display}} {{user.nick}} лишается всех десяти пальцев и не может набирать сообщения {{user.muted_till|remaining(show_seconds=True)}}.
       22: |
-        <b>[Bot]</b> Лизнув батарейку на 9V #{{user.code_display}} {{user.nick}} почувствовал кислинку. Лизнув два оголенных провода на 36V почувствовал новый заряд бодрости и молчит {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> Лизнув батарейку на 9V #{{user.code_display}} {{user.nick}} почувствовал кислинку. Лизнув два оголенных провода на 36V почувствовал новый заряд бодрости и молчит {{user.muted_till|remaining(show_seconds=True)}}.
       23: |
-        <b>[Bot]</b> Привязав один конец нитки к входной двери, а второй конец к молочному зубу, #{{user.code_display}} {{user.nick}} замолкает на {{user.muted_till|remaining(True)}} и ждет когда мама вернется с работы.
+        <b>[Bot]</b> Привязав один конец нитки к входной двери, а второй конец к молочному зубу, #{{user.code_display}} {{user.nick}} замолкает на {{user.muted_till|remaining(show_seconds=True)}} и ждет когда мама вернется с работы.
       24: |
-        <b>[Bot]</b> Вообразив себя злым Волком, из сказки про семеро козлят, #{{user.code_display}} {{user.nick}} просит кузнеца сделать тоненький голосочек. Похоже, кузнец перестарался и придется помолчать {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> Вообразив себя злым Волком, из сказки про семеро козлят, #{{user.code_display}} {{user.nick}} просит кузнеца сделать тоненький голосочек. Похоже, кузнец перестарался и придется помолчать {{user.muted_till|remaining(show_seconds=True)}}.
       25: |
-        <b>[Bot]</b> Грабители врываются в чат, связывают руки и заклеивают скотчем рот #{{user.code_display}} {{user.nick}}. Группа по освобождению заложников прибудет через {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> Грабители врываются в чат, связывают руки и заклеивают скотчем рот #{{user.code_display}} {{user.nick}}. Группа по освобождению заложников прибудет через {{user.muted_till|remaining(show_seconds=True)}}.
       26: |
-        <b>[Bot]</b> Пользователь #{{user.code_display}} {{user.nick}} всегда мечтал сняться в кино и получает роль немого садовника на {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> Пользователь #{{user.code_display}} {{user.nick}} всегда мечтал сняться в кино и получает роль немого садовника на {{user.muted_till|remaining(show_seconds=True)}}.
       27: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} считает что его новые золотые зубы очень идут к лицу и молча улыбается {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} считает что его новые золотые зубы очень идут к лицу и молча улыбается {{user.muted_till|remaining(show_seconds=True)}}.
       28: |
-        <b>[Bot]</b> За неуважение к участникам чата, #{{user.code_display}} {{user.nick}} цепляет на язык прищепку и молчит {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> За неуважение к участникам чата, #{{user.code_display}} {{user.nick}} цепляет на язык прищепку и молчит {{user.muted_till|remaining(show_seconds=True)}}.
       29: |
-        <b>[Bot]</b> Забыв, что держит в руке парилку, #{{user.code_display}} {{user.nick}} разбил лицо фейспалмом и замолкает на {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> Забыв, что держит в руке парилку, #{{user.code_display}} {{user.nick}} разбил лицо фейспалмом и замолкает на {{user.muted_till|remaining(show_seconds=True)}}.
       30: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} выходит на лютый мороз и не может ничего писать {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} выходит на лютый мороз и не может ничего писать {{user.muted_till|remaining(show_seconds=True)}}.
       31: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} решил поспать на потолке и отвлёкся на {{user.muted_till|remaining(True)}}, чтобы решить проблему одеяла.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} решил поспать на потолке и отвлёкся на {{user.muted_till|remaining(show_seconds=True)}}, чтобы решить проблему одеяла.
       32: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} случайно целует металлический поручень на морозе и не может говорить {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} случайно целует металлический поручень на морозе и не может говорить {{user.muted_till|remaining(show_seconds=True)}}.
       33: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} съел не тот гормон, и теперь с грудями он (или без), молча плачет {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} съел не тот гормон, и теперь с грудями он (или без), молча плачет {{user.muted_till|remaining(show_seconds=True)}}.
       34: |
-        <b>[Bot]</b> В попытке повторить успех своего кумира Витаса, #{{user.code_display}} {{user.nick}} надрывает голос и не может говорить {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> В попытке повторить успех своего кумира Витаса, #{{user.code_display}} {{user.nick}} надрывает голос и не может говорить {{user.muted_till|remaining(show_seconds=True)}}.
       35: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}}, желая купаться в одном море с акулами, лишается всех пальцев в острых челюстях и теперь не сможет печатать {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}}, желая купаться в одном море с акулами, лишается всех пальцев в острых челюстях и теперь не сможет печатать {{user.muted_till|remaining(show_seconds=True)}}.
       36: |
-        <b>[Bot]</b> Поверженный в жаркой дискуссии с эрудитами, #{{user.code_display}} {{user.nick}} в шоке молчит {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> Поверженный в жаркой дискуссии с эрудитами, #{{user.code_display}} {{user.nick}} в шоке молчит {{user.muted_till|remaining(show_seconds=True)}}.
       37: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} давится буфетной котлетой, молчит {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} давится буфетной котлетой, молчит {{user.muted_till|remaining(show_seconds=True)}}.
       38: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} - азартный игрок, мечтает обыграть весь чатик в молчанку, что бы победить, нужно молчать {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} - азартный игрок, мечтает обыграть весь чатик в молчанку, что бы победить, нужно молчать {{user.muted_till|remaining(show_seconds=True)}}.
       39: |
-        <b>[Bot]</b> Оседлав реактивную ракету, #{{user.code_display}} {{user.nick}} отправляется до луны и обратно, не в силах общаться в невесомости, молчит {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> Оседлав реактивную ракету, #{{user.code_display}} {{user.nick}} отправляется до луны и обратно, не в силах общаться в невесомости, молчит {{user.muted_till|remaining(show_seconds=True)}}.
       40: |
-        <b>[Bot]</b> Кажется, #{{user.code_display}} {{user.nick}} находит самого редкого покемона, не в силах скрыть своего счастья, лишается дара речи и убегает ловить его, вернется через {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> Кажется, #{{user.code_display}} {{user.nick}} находит самого редкого покемона, не в силах скрыть своего счастья, лишается дара речи и убегает ловить его, вернется через {{user.muted_till|remaining(show_seconds=True)}}.
       41: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} решил доказать всем присутствующим, что может разбить лампочку в прыжке ударом ноги. Он оклемается через {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} решил доказать всем присутствующим, что может разбить лампочку в прыжке ударом ноги. Он оклемается через {{user.muted_till|remaining(show_seconds=True)}}.
       42: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} в знак протеста против системы решил молчать {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} в знак протеста против системы решил молчать {{user.muted_till|remaining(show_seconds=True)}}.
       43: |
-        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} в знак протеста против системы решил молчать {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> #{{user.code_display}} {{user.nick}} в знак протеста против системы решил молчать {{user.muted_till|remaining(show_seconds=True)}}.
       44: |
-        <b>[Bot]</b> Строча очередную несуразицу, клавиатура #{{user.code_display}} {{user.nick}} неожиданно ломается. Придётся замолчать на {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> Строча очередную несуразицу, клавиатура #{{user.code_display}} {{user.nick}} неожиданно ломается. Придётся замолчать на {{user.muted_till|remaining(show_seconds=True)}}.
       45: |
-        <b>[Bot]</b> Желая показаться гением, #{{user.code_display}} {{user.nick}} быстро запутывается в своих суждениях и уходит подумать на {{user.muted_till|remaining(True)}}.
+        <b>[Bot]</b> Желая показаться гением, #{{user.code_display}} {{user.nick}} быстро запутывается в своих суждениях и уходит подумать на {{user.muted_till|remaining(show_seconds=True)}}.
       46: |
-        <b>[Bot]</b> Кто-то достал теплую сосиску из штанов и улыбаясь похлопал ей по щеке #{{user.code_display}} {{user.nick}}, тем самым дав отчетливо понять, что так делать нельзя и через {{user.muted_till|remaining(True)}} будет не сосиска.
+        <b>[Bot]</b> Кто-то достал теплую сосиску из штанов и улыбаясь похлопал ей по щеке #{{user.code_display}} {{user.nick}}, тем самым дав отчетливо понять, что так делать нельзя и через {{user.muted_till|remaining(show_seconds=True)}} будет не сосиска.

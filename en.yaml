@@ -1,7 +1,7 @@
 about: |
   <b>[BOT]</b> <b>{{bot_name}}</b>.
 
-  <b>Uptime:</b> {{started|elapsed(True)}}.
+  <b>Uptime:</b> {{started|elapsed(show_seconds=True)}}.
   <b>Msgs:</b> {{count}}.
   <b>Msg rate:</b> {{r_hours}} msgs/hr, {{r_days}} msgs/day.
 
@@ -124,7 +124,7 @@ info:
   text: |
     <b>[BOT]</b> <b>Information about</b> {{T('common/symbol', user=user)}} #{{user.code_display}} {{user.nick}}:
     With us <b>{{user.created|elapsed}}</b>
-    Wrote last time <b>{{user.last_activity|elapsed(True)}}</b>
+    Wrote last time <b>{{user.last_activity|elapsed(show_seconds=True)}}</b>
     Status: <b>{%if user.is_active%}ONLINE{%else%}OFFLINE{%endif%}
     {%if user.is_owner%}, OWNER{%endif%}
     {%if user.is_resident%}, RESIDENT{%endif%}
@@ -328,9 +328,9 @@ message:
 
 harakiri:
   all: |
-    <b>[Bot]</b> #{{user.code_display}} {{user.nick}} makes harakiri and can't back to chat in {{user.harakiri_till|remaining(True)}}.
+    <b>[Bot]</b> #{{user.code_display}} {{user.nick}} makes harakiri and can't back to chat in {{user.harakiri_till|remaining(show_seconds=True)}}.
   text: |
-    <b>[BOT]</b> You make harakiri and you can back to chan in {{user.harakiri_till|remaining(True)}}.
+    <b>[BOT]</b> You make harakiri and you can back to chan in {{user.harakiri_till|remaining(show_seconds=True)}}.
   fail: |
     <b>[BOT]</b> Fail.
     For this command to work enter /harakiri and ammount of minutes (from 1 to 10080) or R to play a game.
@@ -452,7 +452,7 @@ moderator:
     👮 Moderation for #{{user.code_display}} {{user.nick}}.
 
     {%for l in log%}
-    {{l.time.strftime('%m/%d %H:%M')}} {%if l.by%}#{{l.by.code_display}} {%endif%}<b>{{l.action.upper()}}</b> <i>{%if l.data.till%}{{l.data.till|remaining(True, l.time)}}{%endif%}
+    {{l.time.strftime('%m/%d %H:%M')}} {%if l.by%}#{{l.by.code_display}} {%endif%}<b>{{l.action.upper()}}</b> <i>{%if l.data.till%}{{l.data.till|remaining(show_seconds=True, from_time=l.time)}}{%endif%}
     {%if l.data.nick%}{{l.data.nick}}{%endif%}
     {%if l.data.id%}#{{l.data.id}}{%endif%}
     {%if l.data.status is defined%}{%if l.data.status%}ON{%else%}OFF{%endif%}{%endif%}
@@ -479,9 +479,9 @@ ban:
 
 mute:
   all: |
-    <b>[Bot]</b> #{{user.code_display}} {{user.nick}} is muted for {{user.muted_till|remaining(True)}}.
+    <b>[Bot]</b> #{{user.code_display}} {{user.nick}} is muted for {{user.muted_till|remaining(show_seconds=True)}}.
   text: |
-    <b>[BOT]</b> Your voice was voided in a chat for {{user.muted_till|remaining(True)}}.
+    <b>[BOT]</b> Your voice was voided in a chat for {{user.muted_till|remaining(show_seconds=True)}}.
 
     Your messages, pictures and stickers aren''t displaying in a chat, bot doesn't show that you have entered or left. Wait till time run out and don't piddle no more.
 
@@ -489,9 +489,9 @@ mute:
 
 kick:
   all: |
-    <b>[Bot]</b> #{{user.code_display}} {{user.nick}} was kicked for {{user.kicked_till|remaining(True)}}.
+    <b>[Bot]</b> #{{user.code_display}} {{user.nick}} was kicked for {{user.kicked_till|remaining(show_seconds=True)}}.
   text: |
-    <b>[BOT]</b> You're kicked. You can to come back in {{user.kicked_till|remaining(True)}}.
+    <b>[BOT]</b> You're kicked. You can to come back in {{user.kicked_till|remaining(show_seconds=True)}}.
 
 rename:
   all: |

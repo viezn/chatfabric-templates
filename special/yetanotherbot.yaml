@@ -44,7 +44,7 @@ hug:
 
   all:
     select: |
-      {{T('hug/all/variants/%s' % range(63)|random, ufrom=ufrom, uto=uto, hash=hash)}}
+      {{T('hug/all/variants/%s' % range(63+1)|random, ufrom=ufrom, uto=uto, hash=hash)}}
     variants:
       0: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} крепко обнимает </i>#{{uto.code_display}}<i> {{uto.nick}}, так и не решив толком, хочет обнять или придушить{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
@@ -172,7 +172,8 @@ hug:
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} холодно, и он укрывается в объятиях </i>#{{uto.code_display}}<i> {{uto.nick}}, чтобы согреться{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       62: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} чувствует навязчивую идею обнимать хороших людей, и тянется с обнимашками к </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
-
+      63: |
+        <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}}, испытывая возбуженный интерес, слегка дергает </i>#{{uto.code_display}}<i> {{uto.nick}} за косички{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
 ban:
   all:
     select: |

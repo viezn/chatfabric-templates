@@ -44,7 +44,7 @@ hug:
 
   all:
     select: |
-      {{T('hug/all/variants/%s' % range(63+1)|random, ufrom=ufrom, uto=uto, hash=hash)}}
+      {{T('hug/all/variants/%s' % range(71+1)|random, ufrom=ufrom, uto=uto, hash=hash)}}
     variants:
       0: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} крепко обнимает </i>#{{uto.code_display}}<i> {{uto.nick}}, так и не решив толком, хочет обнять или придушить{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>

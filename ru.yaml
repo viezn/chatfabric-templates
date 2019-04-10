@@ -291,7 +291,7 @@ search:
 
 message:
   text: |
-    {%if hidden%}<b>$</b> {%endif%}{%if edit%}<b>&</b> {%endif%}<i>asdf{{user.nick}}</i>{%if text%}:  {{text}}{%endif%}
+    {%if hidden%}<b>$</b> {%endif%}{%if edit%}<b>&</b> {%endif%}{%if text%}{{user.nick}}:  {{text}}{%else%}<i>{{user.nick}}</i>{%endif%}
   me: |
     <b>{%if edit%}& {%endif%}*</b> <i>{{user.nick}}  {{text}}</i>
 

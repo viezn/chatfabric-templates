@@ -28,7 +28,7 @@ about: |
 
 slap:
   j: |
-    <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} хочет шлепнуть большой форелью </i>#{{uto.code_display}}<i> {{uto.nick}}, но НИРАБОТАИТ!!!{%if hash%}(</i>#{{hash}}<i>){%endif%}</i>
+    <b> *</b> Я не знаю, в чем дело, но дурью несёт за версту, когда #{{ufrom.code_display}} <i>{{ufrom.nick}} пытается шлёпнуть </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
   ohyoutouchmytralala: |
     <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} слегка простимулировал анальную </i>#{{uto.code_display}}<i> {{uto.nick}} большим пальцем{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
   gph: |
@@ -36,7 +36,7 @@ slap:
 
 hug:
   j: |
-    <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} знает, что нотификатор отключен, но все равно хочет привлечь внимание и теребит стики </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+    <b> *</b> Снимите шляпы, господа, наденьте дамы белье, сейчас #{{ufrom.code_display}} <i>{{ufrom.nick}} обнимет </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
   anna: |
     <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} подкралась к </i>#{{uto.code_display}}<i> {{uto.nick}}, прильнула всем телом и нежно поцеловала в щёчку{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
   gph: |

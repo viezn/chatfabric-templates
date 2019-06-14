@@ -304,6 +304,10 @@ message:
       Hidden photo from #{{user.code_display}} {{user.nick}}{%if caption%}:  {{caption}}{%else%}.{%endif%}
     document: |
       Hidden document from #{{user.code_display}} {{user.nick}}{%if caption%}:  {{caption}}{%else%}.{%endif%}
+    video: |
+      Hidden video from #{{user.code_display}} {{user.nick}}{%if caption%}:  {{caption}}{%else%}.{%endif%}
+    audio: |
+      Hidden audio from #{{user.code_display}} {{user.nick}}{%if caption%}:  {{caption}}{%else%}.{%endif%}
   edition:
     noresident: |
       <b>[BOT]</b> Only resident can edit messages.

@@ -303,6 +303,10 @@ message:
       Скрытое фото от #{{user.code_display}} {{user.nick}}{%if caption%}:  {{caption}}{%else%}.{%endif%}
     document: |
       Скрытый документ от #{{user.code_display}} {{user.nick}}{%if caption%}:  {{caption}}{%else%}.{%endif%}
+    video: |
+      Скрытое видео от #{{user.code_display}} {{user.nick}}{%if caption%}:  {{caption}}{%else%}.{%endif%}
+    audio: |
+      Скрытое аудио от #{{user.code_display}} {{user.nick}}{%if caption%}:  {{caption}}{%else%}.{%endif%}
   edition:
     noresident: |
       <b>[BOT]</b> Редактировать сообщения могут только резиденты.

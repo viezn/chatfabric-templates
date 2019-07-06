@@ -188,7 +188,7 @@ hug:
       67: |
         <b> *</b> <i>Заметив, что </i>#{{uto.code_display}}<i> {{uto.nick}} хочет чтобы его обняли, </i>#{{ufrom.code_display}} <i>{{ufrom.nick}} без раздумий бросается на него с объятиями{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       68: |
-        <b> *</b> Если бы в РКН увидели, как #{{ufrom.code_display}} <i>{{ufrom.nick}} жарко и страстно обнимет </i>#{{uto.code_display}}<i> {{uto.nick}}, то запретили бы это непотребство{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> <i>Если бы в РКН увидели, как </i>#{{ufrom.code_display}} <i>{{ufrom.nick}} жарко и страстно обнимет </i>#{{uto.code_display}}<i> {{uto.nick}}, то запретили бы это непотребство{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       69: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} решается всё таки придушить </i>#{{uto.code_display}}<i> {{uto.nick}}, в надежде, что именно этого тот и хочет{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       70: |
@@ -198,27 +198,27 @@ hug:
       72: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} нежно обнимает </i>#{{uto.code_display}}<i> {{uto.nick}}, кажется это любовь{%if hash%}(</i>#{{hash}}<i>){%endif%}!</i>
       73: |
-        <b> *</b> Когда Всевышний Бот придумал обнимашки, никто не ожидал, что #{{ufrom.code_display}} <i>{{ufrom.nick}} будет так страстно обнимать </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> <i>Когда Всевышний Бот придумал обнимашки, никто не ожидал, что </i>#{{ufrom.code_display}} <i>{{ufrom.nick}} будет так страстно обнимать </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       74: |
-        <b> *</b> Жить нужно в удовольствие - считает #{{ufrom.code_display}} <i>{{ufrom.nick}}, с удовольствием обнимая </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> <i>Жить нужно в удовольствие - считает </i>#{{ufrom.code_display}} <i>{{ufrom.nick}}, с удовольствием обнимая </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       75: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} нежно обнимает </i>#{{uto.code_display}}<i> {{uto.nick}} за талию, гладит по коленке, они начинают раздеваться... несовершеннолетним просьба отвернуться{%if hash%}(</i>#{{hash}}<i>){%endif%}!</i>
       76: |
-        <b> *</b> Внимание! #{{ufrom.code_display}} <i>{{ufrom.nick}} проводит мастер-класс по обнимашкам, добровольцем вызывается </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> <i>Внимание! </i>#{{ufrom.code_display}} <i>{{ufrom.nick}} проводит мастер-класс по обнимашкам, добровольцем вызывается </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       77: |
-        <b> *</b> Британские ученые доказали, что обниматься необходимо не менее 10 минут в день, #{{ufrom.code_display}} <i>{{ufrom.nick}} уважает науку и обнимает </i>#{{uto.code_display}}<i> {{uto.nick}} целых 15 минут{%if hash%}(</i>#{{hash}}<i>){%endif%}!</i>
+        <b> *</b> <i>Британские ученые доказали, что обниматься необходимо не менее 10 минут в день, </i>#{{ufrom.code_display}} <i>{{ufrom.nick}} уважает науку и обнимает </i>#{{uto.code_display}}<i> {{uto.nick}} целых 15 минут{%if hash%}(</i>#{{hash}}<i>){%endif%}!</i>
       78: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} не может жить без объятий </i>#{{uto.code_display}}<i> {{uto.nick}}, поэтому решает обняться, намазавшись супер-клеем, теперь они будут обниматься веки вечные{%if hash%}(</i>#{{hash}}<i>){%endif%}!</i>
       79: |
-        <b> *</b> Кто-то внезапно обнимает </i>#{{uto.code_display}}<i> {{uto.nick}} сзади... угадай кто? Конечно же это #{{ufrom.code_display}} <i>{{ufrom.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}!</i>
+        <b> *</b> <i>Кто-то внезапно обнимает </i>#{{uto.code_display}}<i> {{uto.nick}} сзади... угадай кто? Конечно же это </i>#{{ufrom.code_display}} <i>{{ufrom.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}!</i>
       80: |
-        <b> *</b> У #{{ufrom.code_display}} <i>{{ufrom.nick}} самый большой обниматор в чатике, сегодня его по достоинству оценит </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> <i>У</i> #{{ufrom.code_display}} <i>{{ufrom.nick}} самый большой обниматор в чатике, сегодня его по достоинству оценит </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       81: |
         <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} умеет шевелить правым ухом очень активно и когда-то давно хотел, в шутку, обнять кого-нибудь таким образом... сегодня эта мечта исполнится с </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       82: |
-        <b> *</b> Бесцельно блуждая по чату </i>#{{uto.code_display}}<i> {{uto.nick}} попадает в обнимашковую западню #{{ufrom.code_display}} <i>{{ufrom.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> <i>Бесцельно блуждая по чату </i>#{{uto.code_display}}<i> {{uto.nick}} попадает в обнимашковую западню </i>#{{ufrom.code_display}} <i>{{ufrom.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       83: |
-        <b> *</b> </i>#{{uto.code_display}}<i> складывает обнимашку {{uto.nick}} #{{ufrom.code_display}} <i>{{ufrom.nick}} в копилку знаков внимания{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+        <b> *</b> #{{uto.code_display}} <i>{{ufrom.nick}} складывает обнимашку {{uto.nick}} </i>#{{ufrom.code_display}} <i>{{ufrom.nick}} в копилку знаков внимания{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
       84: |
         <b> *</b> Здо́рово жить - говорит Елена Малышева. Но если #{{ufrom.code_display}} <i>{{ufrom.nick}} не обнимет </i>#{{uto.code_display}}<i> {{uto.nick}} хотя бы раз в сутки - жить совсем не здо́рово{%if hash%}(</i>#{{hash}}<i>){%endif%}!</i>
       85: |

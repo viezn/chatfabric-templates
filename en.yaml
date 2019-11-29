@@ -325,6 +325,8 @@ message:
     <b>[Bot]</b> Too much stickers! Wait {{seconds}} more seconds!
   text_only: |
     <b>[BOT]</b> You're restricted to text only.
+  albums_not_allowed: |
+    <b>[BOT]</b> There is no way to send albums to this chat, sorry.
   notification: |
     <b>[BOT]</b> Reply from #{{user.code_display}} {{user.nick}}{%if bot%} in chat @{{bot}}{%endif%}{%if hash%} - #{{hash}}{%endif%}.
   forbid: |
@@ -416,7 +418,9 @@ owner:
 
       🔹 <b>silent_cmds</b> - allow use silent admin's commands.
       Current value: <b>{{options.silent_cmds}}</b>.
-      Current value: <b>{{options.silent_cmds}}</b>.
+
+      🔹 <b>filter_albums</b> - filter albums.
+      Current value: <b>{{options.filter_albums}}</b>.
     ok: |
       <b>[BOT]</b> Setting was saved.
   admins:

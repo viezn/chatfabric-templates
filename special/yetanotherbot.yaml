@@ -35,7 +35,8 @@ slap:
     <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} пытается пробудить древнее зло </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
   pandi: |
     <b> *</b> Желая найти в пустоте что-то мягкое и нежное, #{{ufrom.code_display}} <i>{{ufrom.nick}} протягивает ладонь и обнаруживает </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
-
+  s: |
+    <b> *</b> <i>#{{ufrom.code_display}} {{ufrom.nick}} пытается призвать дьявола, но за него сегодня #{{uto.code_display}} {{uto.nick}}{%if hash%}(#{{hash}}){%endif%}.</i>
 
 hug:
   j: |
@@ -45,7 +46,7 @@ hug:
   gph: |
     <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} падает в бездну в попытке обхватить темноту, приняв её за </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
   md: |
-    <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} крепко прижимается к белому, запачканному кровью, помятому халату </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
+    <b> *</b> #{{ufrom.code_display}} <i>{{ufrom.nick}} крепко прижимается к белому, постиранному, но помятому халату </i>#{{uto.code_display}}<i> {{uto.nick}}{%if hash%}(</i>#{{hash}}<i>){%endif%}.</i>
 
   all:
     select: |

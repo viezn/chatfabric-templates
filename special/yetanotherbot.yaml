@@ -179,7 +179,7 @@ hug:
       62: |
         <b> *</b> <i>#{{ufrom.code_display}} {{ufrom.nick}} чувствует навязчивую идею обнимать хороших людей, и тянется с обнимашками к #{{uto.code_display}} {{uto.nick}}{%if hash%}(#{{hash}}){%endif%}.</i>
       63: |
-        <b> *</b> <i>#{{ufrom.code_display}} {{ufrom.nick}}, испытывая возбуженный интерес, слегка дергает #{{uto.code_display}} {{uto.nick}} за косички{%if hash%}(#{{hash}}){%endif%}.</i>
+        <b> *</b> <i>#{{ufrom.code_display}} {{ufrom.nick}}, испытывая возбужденный интерес, слегка дергает #{{uto.code_display}} {{uto.nick}} за косички{%if hash%}(#{{hash}}){%endif%}.</i>
       64: |
         <b> *</b> <i>Желая поделиться своей радостью, #{{ufrom.code_display}} {{ufrom.nick}} выбирает своей жертвой #{{uto.code_display}} {{uto.nick}}{%if hash%}(#{{hash}}){%endif%}.</i>
       65: |

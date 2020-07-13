@@ -37,6 +37,10 @@ slap:
     <b> *</b> Желая найти в пустоте что-то мягкое и нежное, <i>#{{ufrom.code_display}} {{ufrom.nick}} протягивает ладонь и обнаруживает #{{uto.code_display}} {{uto.nick}}{%if hash%}(#{{hash}}){%endif%}.</i>
   s: |
     <b> *</b> <i>#{{ufrom.code_display}} {{ufrom.nick}} пытается призвать дьявола, но за него сегодня #{{uto.code_display}} {{uto.nick}}{%if hash%}(#{{hash}}){%endif%}.</i>
+  cdnc: |
+    <b> *</b> <i>Принося в жертву агнцев и девственниц, #{{ufrom.code_display}} {{ufrom.nick}} проводит ритуал призыва #{{uto.code_display}} {{uto.nick}}. Но то ли агнцы генно-модифицированы, то ли девственницы не девствены... Ритуал проваливается{%if hash%}(#{{hash}}){%endif%}.</i>
+  k: |
+    <b> *</b> <i>Разбитая ваза, повсюду шерсть, от форели остались лишь косточки. Не на это надеялся #{{ufrom.code_display}} {{ufrom.nick}}, заводя #{{uto.code_display}} {{uto.nick}}{%if hash%}(#{{hash}}){%endif%}.</i>
 
 hug:
   j: |
@@ -47,6 +51,12 @@ hug:
     <b> *</b> <i>#{{ufrom.code_display}} {{ufrom.nick}} падает в бездну в попытке обхватить темноту, приняв её за #{{uto.code_display}} {{uto.nick}}{%if hash%}(#{{hash}}){%endif%}.</i>
   md: |
     <b> *</b> <i>#{{ufrom.code_display}} {{ufrom.nick}} крепко прижимается к белому, постиранному, но помятому халату #{{uto.code_display}} {{uto.nick}}{%if hash%}(#{{hash}}){%endif%}.</i>
+  cdnc: |
+    <b> *</b> <i>Лёгкое возбуждение вновь нахлынуло на #{{ufrom.code_display}} {{ufrom.nick}}, это чувство ни с чем не сравнить. Тепло, лёгкие нотки корицы, сильные и страстные руки. Жаль, что объятия #{{uto.code_display}} {{uto.nick}} не длятся вечно{%if hash%}(#{{hash}}){%endif%}.</i>
+  pandi: |
+    <b> *</b> <i>Когда сосцы #{{ufrom.code_display}} {{ufrom.nick}} столкнулись с сосцами #{{uto.code_display}} {{uto.nick}}, они то и дело подгоняли, и дурманили, и направляли за собой, и вновь возвращали друг другу{%if hash%}(#{{hash}}){%endif%}...</i>
+  ether: |
+    <b> *</b> <i>#{{ufrom.code_display}} {{ufrom.nick}} полагается на все свои чувства, пытаясь заключить #{{uto.code_display}} {{uto.nick}} в свои объятия, однако забывает, что {{uto.nick}} — вне времени и пространства{%if hash%}(#{{hash}}){%endif%}!</i>
 
   all:
     select: |

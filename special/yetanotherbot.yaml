@@ -57,6 +57,10 @@ hug:
     <b> *</b> <i>Когда сосцы #{{ufrom.code_display}} {{ufrom.nick}} столкнулись с сосцами #{{uto.code_display}} {{uto.nick}}, они то и дело подгоняли, и дурманили, и направляли за собой, и вновь возвращали друг другу{%if hash%}(#{{hash}}){%endif%}...</i>
   ether: |
     <b> *</b> <i>#{{ufrom.code_display}} {{ufrom.nick}} полагается на все свои чувства, пытаясь заключить #{{uto.code_display}} {{uto.nick}} в свои объятия, однако забывает, что {{uto.nick}} — вне времени и пространства{%if hash%}(#{{hash}}){%endif%}!</i>
+  clip: |
+    <b> *</b> <i>Для #{{ufrom.code_display}} {{ufrom.nick}} объятья со #{{uto.code_display}} {{uto.nick}} всегда начинаются с бокала игристого, а заканчиваются в спальном районе города N{%if hash%}(#{{hash}}){%endif%}.</i>
+  k: |
+    <b> *</b> <i>Зная, что антистресса лучше коськи не найти, #{{ufrom.code_display}} {{ufrom.nick}} решает потискать #{{uto.code_display}} {{uto.nick}} и случайно активирует мурчалки{%if hash%}(#{{hash}}){%endif%}.</i>
 
   all:
     select: |

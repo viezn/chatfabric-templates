@@ -422,6 +422,9 @@ owner:
 
       🔹 <b>filter_albums</b> - filter albums.
       Current value: <b>{{options.filter_albums}}</b>.
+
+      🔹 <b>new_textual</b> - newcomers will have TEXT status.
+      Current value: <b>{{options.filter_albums}}</b>.
     ok: |
       <b>[BOT]</b> Setting was saved.
   admins:

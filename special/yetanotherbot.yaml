@@ -41,6 +41,8 @@ slap:
     <b> *</b> <i>Принося в жертву агнцев и девственниц, #{{ufrom.code_display}} {{ufrom.nick}} проводит ритуал призыва #{{uto.code_display}} {{uto.nick}}. Но то ли агнцы генно-модифицированы, то ли девственницы не девственны... Ритуал проваливается{%if hash%}(#{{hash}}){%endif%}.</i>
   k: |
     <b> *</b> <i>Разбитая ваза, повсюду шерсть, от форели остались лишь косточки. Не на это надеялся #{{ufrom.code_display}} {{ufrom.nick}}, заводя #{{uto.code_display}} {{uto.nick}}{%if hash%}(#{{hash}}){%endif%}.</i>
+  jie_on: |
+    <b> *</b> <i>#{{ufrom.code_display}} {{ufrom.nick}}, пытаясь привлечь внимание #{{uto.code_display}} {{uto.nick}}, шлёпает по попке, но получает в ответ лишь: Вы кто такие? Я вас не звал. Идите спать!{%if hash%}(#{{hash}}){%endif%}</i>
 
 hug:
   j: |
@@ -58,13 +60,13 @@ hug:
   ether: |
     <b> *</b> <i>#{{ufrom.code_display}} {{ufrom.nick}} полагается на все свои чувства, пытаясь заключить #{{uto.code_display}} {{uto.nick}} в свои объятия, однако забывает, что {{uto.nick}} — вне времени и пространства{%if hash%}(#{{hash}}){%endif%}!</i>
   clip: |
-    <b> *</b> <i>Для #{{ufrom.code_display}} {{ufrom.nick}} объятья со #{{uto.code_display}} {{uto.nick}} всегда начинаются с бокала игристого, а заканчиваются в спальном районе города N{%if hash%}(#{{hash}}){%endif%}.</i>
+    <b> *</b> <i>Для #{{ufrom.code_display}} {{ufrom.nick}} объятья с #{{uto.code_display}} {{uto.nick}} всегда начинаются с бокала игристого, а заканчиваются в спальном районе города N{%if hash%}(#{{hash}}){%endif%}.</i>
   k: |
     <b> *</b> <i>Зная, что антистресса лучше коськи не найти, #{{ufrom.code_display}} {{ufrom.nick}} решает потискать #{{uto.code_display}} {{uto.nick}} и случайно активирует мурчалки{%if hash%}(#{{hash}}){%endif%}.</i>
 
   all:
     select: |
-      {{T('hug/all/variants/%s' % range(85+1)|random, ufrom=ufrom, uto=uto, hash=hash)}}
+      {{T('hug/all/variants/%s' % range(88+1)|random, ufrom=ufrom, uto=uto, hash=hash)}}
     variants:
       0: |
         <b> *</b> <i>#{{ufrom.code_display}} {{ufrom.nick}} крепко обнимает #{{uto.code_display}} {{uto.nick}}, так и не решив толком, хочет обнять или придушить{%if hash%}(#{{hash}}){%endif%}.</i>
@@ -238,6 +240,12 @@ hug:
         <b> *</b> <i>Здо́рово жить - говорит Елена Малышева. Но если #{{ufrom.code_display}} {{ufrom.nick}} не обнимет #{{uto.code_display}} {{uto.nick}} хотя бы раз в сутки - жить совсем не здо́рово{%if hash%}(#{{hash}}){%endif%}!</i>
       85: |
         <b> *</b> <i>#{{ufrom.code_display}} {{ufrom.nick}}, заметив в дальнем углу бара #{{uto.code_display}} {{uto.nick}}, тушит в пепельнице сигару и направляется в закуток, чтобы потискаться в приватной обстановке{%if hash%}(#{{hash}}){%endif%}.</i>
+      86: |
+        <b> *</b> <i>Отринув последние остатки скромности, #{{ufrom.code_display}} {{ufrom.nick}} набрасывается с объятьями на #{{uto.code_display}} {{uto.nick}}{%if hash%}(#{{hash}}){%endif%}.</i>
+      87: |
+        <b> *</b> <i>#{{ufrom.code_display}} {{ufrom.nick}} хочет привлечь внимание #{{uto.code_display}} {{uto.nick}} пуская в ход свои шаловливые пальчики{%if hash%}(#{{hash}}){%endif%}.</i>
+      88: |
+        <b> *</b> <i>По-отечески, добродушно, без какого-либо подвоха #{{ufrom.code_display}} {{ufrom.nick}} обнимает #{{uto.code_display}} {{uto.nick}}{%if hash%}(#{{hash}}){%endif%}.</i>
 
 ban:
   all:

@@ -439,10 +439,35 @@ admin:
       <b>[BOT]</b> User #{{user.code_display}} {{user.nick}} was succesfully added to moderators.
     removed: |
       <b>[BOT]</b> User #{{user.code_display}} {{user.nick}} was succesfully removed from moderators.
+  sethugslaphelp: |
+    <b>[BOT]</b> In order to set persolan hug/slap please use following syntax:
+
+    /sethug #CODE text of hug
+    /setslap #CODE text of slap
+
+    Text could contains placeholders and must contains proper html-formatting. For example:
+
+    <code>&lt;b&gt; *&lt;/b&gt; &lt;i&gt;#$from_code $from_nick hugs #$to_code $to_nick.&lt;/i&gt;</code>
+  sethug: |
+    {%if text%}
+    <b>[BOT]</b> A personal hug for #{{user.code_display}} {{user.nick}} has been successfully set:
+
+    {{text}}
+    {%else%}
+    <b>[BOT]</b> A personal hug for #{{user.code_display}} {{user.nick}} has been removed.
+    {%endif%}
+  setslap: |
+    {%if text%}
+    <b>[BOT]</b> A personal slap for #{{user.code_display}} {{user.nick}} has been successfully set:
+
+    {{text}}
+    {%else%}
+    <b>[BOT]</b> A personal slap for #{{user.code_display}} {{user.nick}} has been removed.
+    {%endif%}
   unbaned: |
     <b>[BOT]</b> User #{{user.code_display}} {{user.nick}} is succesfully unbaned.
   changedid: |
-    <b>[BOT]</b> ID user #{{user.code_display}} {{user.nick}} succesfully changed to #{{new_code}}.
+    <b>[BOT]</b> ID of user #{{user.code_display}} {{user.nick}} is succesfully changed to #{{new_code}}.
   say: |
     <b>[Bot]</b> {{text}}
   poll_killed: |

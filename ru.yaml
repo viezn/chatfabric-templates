@@ -439,6 +439,31 @@ admin:
       <b>[BOT]</b> Пользователь #{{user.code_display}} {{user.nick}} успешно добавлен в модераторы.
     removed: |
       <b>[BOT]</b> Пользователь #{{user.code_display}} {{user.nick}} успешно удален из модераторов.
+  sethugslaphelp: |
+    <b>[BOT]</b> Для установки персональной обнимашки/форели используй следующий синтаксис:
+
+    /sethug #CODE текст обнимашки
+    /setslap #CODE текст форели
+
+    Текст может содержать плейсхолдеры и должен содержать правильное html-форматирование, например:
+
+    <code>&lt;b&gt; *&lt;/b&gt; &lt;i&gt;#$from_code $from_nick крепко обнимает #$to_code $to_nick.&lt;/i&gt;</code>
+  sethug: |
+    {%if text%}
+    <b>[BOT]</b> Пользователю #{{user.code_display}} {{user.nick}} успешно установлена обнимашка:
+
+    {{text}}
+    {%else%}
+    <b>[BOT]</b> Пользователю #{{user.code_display}} {{user.nick}} успешно убрана обнимашка.
+    {%endif%}
+  setslap: |
+    {%if text%}
+    <b>[BOT]</b> Пользователю #{{user.code_display}} {{user.nick}} успешно установлена форель:
+
+    {{text}}
+    {%else%}
+    <b>[BOT]</b> Пользователю #{{user.code_display}} {{user.nick}} успешно убрана форель.
+    {%endif%}
   unbaned: |
     <b>[BOT]</b> Пользователь #{{user.code_display}} {{user.nick}} успешно разбанен.
   changedid: |

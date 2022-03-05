@@ -54,6 +54,8 @@ help: |
 
   <b>Admin's commands:</b>
 
+  /sethug [CODE] [TEXT] - <i>Set a personal hug</i>
+  /setslap [CODE] [TEXT] - <i>Set a personal slap</i>
   /changeid [CODE] [NEW] - <i>Change user's ID</i>
   /addmod [CODE] - <i>Add a moderator</i>
   /rmmod [CODE] - <i>Delete a moderator</i>

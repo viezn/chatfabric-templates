@@ -9,7 +9,7 @@ about: |
 
   Jika kamu memiliki pertanyaan terkait bot dan pengembangan platform - hubungi @RocketBotsBot.
 
-  Berita terbaru: @ChatFactory.
+  Update terbaru: @ChatFactory.
 
 help: |
   <b>[BOT]</b> Menu bot:
@@ -72,12 +72,12 @@ help: |
   /option [NAME] [VALUE] - <i>Ubah peraturan chat</i>
   {%endif%}
 
-  Most commands may be used in reply instead of enter CODE.
+  Selain memasukan KODE, sebagian perintah dapat digunakan dengan mereply pesan sebelumnya.
 
 common:
   kb:
     cancel: |
-      ❌ Cancel
+      ❌ Batalkan
     cancels: |
       ❌
     back: |
@@ -87,11 +87,11 @@ common:
   luna: |
     {%if minutes < 5 and days <= 0%}🌕{%elif minutes < 60 and days <= 0%}🌖{%elif minutes < 60 * 12 and days <= 0%}🌗{%elif hours < 24 and days <= 0%}🌘{%else%}🌑{%endif%}
   noresident: |
-    <b>[BOT]</b> Very sorry, but this command is only for chat's residents.
+    <b>[BOT]</b> Maaf, perintah ini hanya bisa dilakukan oleh anggota tetap.
   unknown: |
-    <b>[BOT]</b> I don't know this command. Press /help, To see all availiable commands.
+    <b>[BOT]</b> Perintah tidak dikenali. Ketik /help, untuk melihat semua perintah.
   fail: |
-    <b>[BOT]</b> Can not. 😔
+    <b>[BOT]</b> Tidak bisa. 😔
   fail_alert: |
     Can not. 😔
 
@@ -113,105 +113,105 @@ info:
       menu: |
         🚯
       msg: |
-        🚯 Forbid privates
+        🚯 Matika pesan pribadi
       slap: |
-        🚯 Forbid slaps
+        🚯 Matikan tamparan
       hug: |
-        🚯 Forbid hugs
+        🚯 Matikan pelukan
       replay: |
-        🚯 Forbid replies
+        🚯 Matika pesan balasan
       text: |
-        🚯 Ignore messages
+        🚯 Abaikan pesan
   fail: |
-    <b>[BOT]</b> User not found.
+    <b>[BOT]</b> Pengguna tidak ditemukan.
   text: |
-    <b>[BOT]</b> <b>Information about</b> {{T('common/symbol', user=user)}} #{{user.code_display}} {{user.nick}}:
-    With us <b>{{user.created|elapsed}}</b>
-    Wrote last time <b>{{user.last_activity|elapsed(show_seconds=True)}}</b>
+    <b>[BOT]</b> <b>Informasi tentang</b> {{T('common/symbol', user=user)}} #{{user.code_display}} {{user.nick}}:
+    Bersama kami <b>{{user.created|elapsed}}</b>
+    Menulis terakhir kali <b>{{user.last_activity|elapsed(show_seconds=True)}}</b>
     Status: <b>{%if user.is_active%}ONLINE{%else%}OFFLINE{%endif%}
     {%if user.is_owner%}, OWNER{%endif%}
-    {%if user.is_resident%}, RESIDENT{%endif%}
+    {%if user.is_resident%}, ANGGOTA TETAP{%endif%}
     {%if user.banned%}, BANNED{%endif%}
-    {%if user.muted%}, MUTED{%endif%}
+    {%if user.muted%}, DIBISUKAN{%endif%}
     {%if user.harakiri%}, HARAKIRI{%endif%}
     {%if user.is_moderator%}, MODERATOR{%endif%}
     {%if user.is_admin%}, ADMIN{%endif%}
-    {%if user.frozen%}, FROZEN{%endif%}
-    {%if user.text_only%}, TEXT{%endif%}
-    {%if user.bot_banned%}, RASCAL{%endif%}
+    {%if user.frozen%}, DIBEKUKAN{%endif%}
+    {%if user.text_only%}, TEKS{%endif%}
+    {%if user.bot_banned%}, PENGKHIANAT WKWK{%endif%}
     </b>
-    Notifications: <b>{% if user.notify_msg or user.notify_slaps or user.notify_replays or user.notify_hugs or user.notify_poll%}
+    Notifikasi: <b>{% if user.notify_msg or user.notify_slaps or user.notify_replays or user.notify_hugs or user.notify_poll%}
     {% set pipe = joiner(", ") %}
-    {%if user.notify_msg%}{{ pipe() }}PRIVATES{%endif%}
-    {%if user.notify_slaps%}{{ pipe() }}SLAPS{%endif%}
-    {%if user.notify_hugs%}{{ pipe() }}HUGS{%endif%}
-    {%if user.notify_replays%}{{ pipe() }}REPLIES{%endif%}
+    {%if user.notify_msg%}{{ pipe() }}PRIVAT{%endif%}
+    {%if user.notify_slaps%}{{ pipe() }}TAMPARAN{%endif%}
+    {%if user.notify_hugs%}{{ pipe() }}PELUKAN{%endif%}
+    {%if user.notify_replays%}{{ pipe() }}BALASAN{%endif%}
     {%if user.notify_poll%}{{ pipe() }}POLLS{%endif%}
     {%else%}OFF{%endif%}</b>
     {% if user._id|string in iam.ignores %}
 
     🚯 You forbid: <b>{% set pipe = joiner(", ") %}{% set ignores = iam.ignores[user._id|string] %}
-    {%if 'msg' in ignores%}{{ pipe() }}PRIVATES{%endif%}
-    {%if 'slap' in ignores%}{{ pipe() }}SLAPS{%endif%}
-    {%if 'hug' in ignores%}{{ pipe() }}HUGS{%endif%}
-    {%if 'replay' in ignores%}{{ pipe() }}REPLIES{%endif%}
-    {%if 'text' in ignores%}{{ pipe() }}MESSAGES{%endif%}</b>
+    {%if 'msg' in ignores%}{{ pipe() }}PRIVAT{%endif%}
+    {%if 'slap' in ignores%}{{ pipe() }}TAMPARAN{%endif%}
+    {%if 'hug' in ignores%}{{ pipe() }}PELUKAN{%endif%}
+    {%if 'replay' in ignores%}{{ pipe() }}BALASAN{%endif%}
+    {%if 'text' in ignores%}{{ pipe() }}PESAN{%endif%}</b>
     {%endif%}
 
-    {%if inviter %}<b>By inviting:</b> {{T('common/symbol', user=inviter)}} #{{inviter.code_display}} {{inviter.nick}}
+    {%if inviter %}<b>Mengundang:</b> {{T('common/symbol', user=inviter)}} #{{inviter.code_display}} {{inviter.nick}}
 
     {%endif%}
     {%if user.ach%}
-    <b>Achievements:</b>
+    <b>Pencapaian:</b>
     {%for k, v in user.ach.items()|reverse%}
     {{k}} - {{v}}
     {% if not all_ach and loop.index == max_ach and user.ach|count > max_ach%}...{% break %}{% endif %}
     {%endfor%}
     {%else%}
-    <b>No achievements.</b>
+    <b>Tidak ada pencapaian.</b>
     {%endif%}
 
 invite:
   invalid: |
-    <b>[BOT]</b> This invite was already used by someone or it's time was expired.
+    <b>[BOT]</b> Undangan ini sudah digunakan oleh seseorang atau telah expired.
   closed: |
-    <b>[BOT]</b> This is closed chat. You need to have an invite.
+    <b>[BOT]</b> Ini adalah obrolan tertutup. Kamu harus memiliki undangan.
   new: |
-    <b>[BOT]</b> New invite is ready: https://t.me/{{bot}}?start=invite_{{invite}}
+    <b>[BOT]</b> Undangan baru: https://t.me/{{bot}}?start=invite_{{invite}}
   forbidden: |
-    <b>[BOT]</b> This command is not availiablefor you.
+    <b>[BOT]</b> Perintah ini tidak tersedia untuk kamu.
 
 poll:
   start: |
-    <b>[BOT]</b> You are starting a {%if inline%}inline poll{%else%}poll{%endif%}.
+    <b>[BOT]</b> Kamu memulai {%if inline%}{%else%}poll{%endif%}.
 
-    Enter the question and answers one by line like this:
+    Masukkan pertanyaan dan jawaban per baris seperti ini:
 
     <i>Question?
-    Answer1
-    Answer2
-    Answer3</i>
+    Jawaban1
+    Jawaban2
+    Jawaban3</i>
 
-    {%if inline%}Poll will be valid one hour. {%endif%}Click /cancel for cancel.
+    {%if inline%}Polling akan berlaku satu jam. {%endif%}Klik /cancel untuk membatalkan.
   started: <b>[BOT]</b> Poll started! To end a poll use /polldone.
   inline: |
-    <b>[Bot]</b> #{{poll.code_display}} {{poll.nick}} put a question:
+    <b>[Bot]</b> #{{poll.code_display}} {{poll.nick}} masukan pertanyaan:
     <i>{{poll.question}}</i>
 
     {%for v in poll.variants%}
     {%if loop.index0==selected%}✔{%endif%}{{map[loop.index0]}} - <i>{{v}}</i>
     {%endfor%}
   poll: |
-    {%if started%}<b>[Bot]</b> The poll is announced!{%else%}<b>[BOT]</b>{%endif%} #{{user.code_display}} {{user.nick}} put a question:
+    {%if started%}<b>[Bot]</b> Polling diumumkan!{%else%}<b>[BOT]</b>{%endif%} #{{user.code_display}} {{user.nick}} masukan pertanyaan:
     <i>{{poll.question}}</i>
 
-    {%if vote%}Choose an option:{%endif%}
+    {%if vote%}Pilih pilihan:{%endif%}
     {%for v in poll.variants%}
     {{map[loop.index0]}} - <i>{{v}}</i>
     {%endfor%}
     {%if vote_user%}
 
-    You voted for:
+    Kamu memilih untuk:
 
     {%if vote_user._id in poll.answers%}{{poll.variants[poll.answers[vote_user._id]]}}{%else%}<i>You haven't voted yet.</i>{%endif%}
     {%endif%}

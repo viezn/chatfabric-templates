@@ -72,7 +72,7 @@ help: |
   /option [NAME] [VALUE] - <i>Ubah peraturan chat</i>
   {%endif%}
 
-  Selain memasukan KODE, sebagian perintah dapat digunakan dengan mereply pesan sebelumnya.
+  Selain memasukkan KODE, sebagian perintah dapat digunakan dengan mereply pesan sebelumnya.
 
 common:
   kb:
@@ -113,13 +113,13 @@ info:
       menu: |
         🚯
       msg: |
-        🚯 Matika pesan pribadi
+        🚯 Matikan pesan pribadi
       slap: |
         🚯 Matikan tamparan
       hug: |
         🚯 Matikan pelukan
       replay: |
-        🚯 Matika pesan balasan
+        🚯 Matikan pesan balasan
       text: |
         🚯 Abaikan pesan
   fail: |
@@ -138,7 +138,7 @@ info:
     {%if user.is_admin%}, ADMIN{%endif%}
     {%if user.frozen%}, DIBEKUKAN{%endif%}
     {%if user.text_only%}, TEKS{%endif%}
-    {%if user.bot_banned%}, PENGKHIANAT WKWK{%endif%}
+    {%if user.bot_banned%}, NAKAL{%endif%}
     </b>
     Notifikasi: <b>{% if user.notify_msg or user.notify_slaps or user.notify_replays or user.notify_hugs or user.notify_poll%}
     {% set pipe = joiner(", ") %}
@@ -195,14 +195,14 @@ poll:
     {%if inline%}Polling akan berlaku satu jam. {%endif%}Klik /cancel untuk membatalkan.
   started: <b>[BOT]</b> Poll started! To end a poll use /polldone.
   inline: |
-    <b>[Bot]</b> #{{poll.code_display}} {{poll.nick}} masukan pertanyaan:
+    <b>[Bot]</b> #{{poll.code_display}} {{poll.nick}} masukkan pertanyaan:
     <i>{{poll.question}}</i>
 
     {%for v in poll.variants%}
     {%if loop.index0==selected%}✔{%endif%}{{map[loop.index0]}} - <i>{{v}}</i>
     {%endfor%}
   poll: |
-    {%if started%}<b>[Bot]</b> Polling diumumkan!{%else%}<b>[BOT]</b>{%endif%} #{{user.code_display}} {{user.nick}} masukan pertanyaan:
+    {%if started%}<b>[Bot]</b> Polling diumumkan!{%else%}<b>[BOT]</b>{%endif%} #{{user.code_display}} {{user.nick}} masukkan pertanyaan:
     <i>{{poll.question}}</i>
 
     {%if vote%}Pilih pilihan:{%endif%}
@@ -213,33 +213,33 @@ poll:
 
     Kamu memilih untuk:
 
-    {%if vote_user._id in poll.answers%}{{poll.variants[poll.answers[vote_user._id]]}}{%else%}<i>You haven't voted yet.</i>{%endif%}
+    {%if vote_user._id in poll.answers%}{{poll.variants[poll.answers[vote_user._id]]}}{%else%}<i>Kamu belum memilih.</i>{%endif%}
     {%endif%}
   done: |
-    <b>[Bot]</b> Results of poll #{{user.code_display}} {{user.nick}}:
+    <b>[Bot]</b> Hasil polling #{{user.code_display}} {{user.nick}}:
     <i>{{poll.question}}</i>
 
     {%for s, p in poll.total%}
     {{map[loop.index0]}} {{p}}%({{s}}) - <i>{{poll.variants[loop.index0]}}</i>
     {%endfor%}
 
-    The number of voters: {{poll.answers|length}} users.
+    Jumlah voters: {{poll.answers|length}} users.
 
   notification:
     start: |
-      <b>[BOT]</b> In chat{%if bot%} @{{bot}}{%endif%} the poll is announced! #{{user.code_display}} {{user.nick}} put a question:
+      <b>[BOT]</b> Di{%if bot%} @{{bot}}{%endif%} polling dimulai! #{{user.code_display}} {{user.nick}} taruh pertanyaan:
       <i>{{poll.question}}</i>
     chat: |
-      <b>[Bot]</b> The poll is active! #{{user.code_display}} {{user.nick}} put a question:
+      <b>[Bot]</b> Polling aktif! #{{user.code_display}} {{user.nick}} masukkan pertanyaan:
 
       <i>{{poll.question}}</i>
 
-      You can vote using command /vote.
+      Kamu dapat memilih dengan mengetikan /vote.
   canceled: |
-    <b>[BOT]</b> Start of{%if inline%}inline poll{%else%}poll{%endif%} was canceled.
+    <b>[BOT]</b> Pada{%if inline%}inline poll{%else%}poll{%endif%} telah dibatalkan.
   error: |
-    <b>[BOT]</b> {%if inline%}Inline poll{%else%}Poll{%endif%} must contains from 2 to 10 response options.
-    Try again or click /cancel for cancel.
+    <b>[BOT]</b> {%if inline%}Inline poll{%else%}Poll{%endif%} harus memuat 2 - 10 opsi.
+    Coba lagi atau klik /cancel untuk membatalkan.
   text_only: |
     <b>[BOT]</b> Use text only.
   not_active_inline: |

@@ -347,21 +347,21 @@ nick:
   enter: |
     <b>[BOT]</b> Nama kamu sekarang - {{user.nick}}
 
-    Enter a new nick or press /cancel for cancel.
+    Masukkan nick baru atau tekan /cancel untuk membatalkan.
   all: |
-    <b>[Bot]</b> #{{user.code_display}} {{old_nick}} changed nick to {{user.nick}}
+    <b>[Bot]</b> #{{user.code_display}} {{old_nick}} mengganti nama jadi {{user.nick}}
   bad: |
-    <b>[BOT]</b> This nick does not fit.
+    <b>[BOT]</b> Nick ini tidak cocok.
   canceled: |
-    <b>[BOT]</b> Nick change was canceled.
+    <b>[BOT]</b> Perubahan nama panggilan dibatalkan.
   frozen: |
-    <b>[BOT]</b> You are not allowed to change your nickname.
+    <b>[BOT]</b> Kamu tidak diizinkan untuk mengubah nama panggilan.
   taken: |
-    <b>[BOT]</b> This nick is already taken.
+    <b>[BOT]</b> Nick ini sudah diambil.
   long: |
-    <b>[BOT]</b> Nick is too long.
+    <b>[BOT]</b> Nick terlalu panjang.
   msg: |
-    <b>[BOT]</b> Your new nick - {{user.nick}}.
+    <b>[BOT]</b> nick barumu - {{user.nick}}.
 
 notify:
   kb:

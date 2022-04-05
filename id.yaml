@@ -274,7 +274,7 @@ list:
 
 last:
   text: |
-    <b>[BOT]</b> Recently exited:
+    <b>[BOT]</b> Baru saja keluar:
 
     {%for u in users%}
     {{T('common/symbol', user=u)}}#{{u.code_display}} {{u.nick}}, {{u.last_activity|elapsed()}}
@@ -282,16 +282,16 @@ last:
 
 search:
   text: |
-    <b>[BOT]</b> Search results:
+    <b>[BOT]</b> Hasil Pencarian:
 
     {%for u in users%}
     {{T('common/symbol', user=u)}}#{{u.code_display}} {{u.nick}}, {{u.last_activity|elapsed()}}
     {%endfor%}
     {%if too_many%}
 
-    <i>Too many accounts was found. Specify your inquiry.</i>{%endif%}
+    <i>Terlalu banyak akun yang ditemukan. Silakan pastikan kembali.</i>{%endif%}
   nothing: |
-    <b>[BOT]</b> Nothing was found.
+    <b>[BOT]</b> Tidak ada yang ditemukan.
 
 message:
   text: |
@@ -302,50 +302,50 @@ message:
   hidden:
     kb:
       show: |
-        👀 Show
+        👀 Lihat
     photo: |
-      Hidden photo from #{{user.code_display}} {{user.nick}}{%if caption%}:  {{caption}}{%else%}.{%endif%}
+      Foto tersembunyi dari #{{user.code_display}} {{user.nick}}{%if caption%}:  {{caption}}{%else%}.{%endif%}
     document: |
-      Hidden document from #{{user.code_display}} {{user.nick}}{%if caption%}:  {{caption}}{%else%}.{%endif%}
+      Dokumen tersembunyi dari #{{user.code_display}} {{user.nick}}{%if caption%}:  {{caption}}{%else%}.{%endif%}
     video: |
-      Hidden video from #{{user.code_display}} {{user.nick}}{%if caption%}:  {{caption}}{%else%}.{%endif%}
+      Video tersembunyi dari #{{user.code_display}} {{user.nick}}{%if caption%}:  {{caption}}{%else%}.{%endif%}
     audio: |
-      Hidden audio from #{{user.code_display}} {{user.nick}}{%if caption%}:  {{caption}}{%else%}.{%endif%}
+      Audio tersembunyi dari #{{user.code_display}} {{user.nick}}{%if caption%}:  {{caption}}{%else%}.{%endif%}
   edition:
     noresident: |
-      <b>[BOT]</b> Only resident can edit messages.
+      <b>[BOT]</b> Hanya anggota tetap yang dapat mengedit pesan.
     forbidden: |
-      <b>[BOT]</b> Can't edit this message.
+      <b>[BOT]</b> Tidak dapat mengedit pesan ini.
     timeout: |
-      <b>[BOT]</b> Message editing timeout.
+      <b>[BOT]</b> Batas waktu edit berakhir.
   not_sent: |
-    <b>[BOT]</b> Bot doesn't send locations and contact details.
+    <b>[BOT]</b> Bot tidak mengirim lokasi dan detail kontak.
   flood: |
-    <b>[BOT]</b> Too much messages! Wait a little before write more!
+    <b>[BOT]</b> Terlalu banyak pesan! Tunggu sebentar sebelum menulis lagi!
   filtered: |
-    <b>[Bot]</b> Very sorry, but you can't send links!
+    <b>[Bot]</b> Maaf, tetapi kamu tidak dapat mengirim tautan!
   stickers_too_fast: |
-    <b>[Bot]</b> Too much stickers! Wait {{seconds}} more seconds!
+    <b>[Bot]</b> Terlalu banyak stiker! Tunggu {{seconds}} detik!
   text_only: |
-    <b>[BOT]</b> You're restricted to text only.
+    <b>[BOT]</b> Kamu dibatasi hanya dapat mengirim teks.
   albums_not_allowed: |
-    <b>[BOT]</b> There is no way to send albums to this chat, sorry.
+    <b>[BOT]</b> Maaf, Tidak ada cara untuk mengirim album ke obrolan ini.
   notification: |
-    <b>[BOT]</b> Reply from #{{user.code_display}} {{user.nick}}{%if bot%} in chat @{{bot}}{%endif%}{%if hash%} - #{{hash}}{%endif%}.
+    <b>[BOT]</b> Balasan dari #{{user.code_display}} {{user.nick}}{%if bot%} di chat @{{bot}}{%endif%}{%if hash%} - #{{hash}}{%endif%}.
   forbid: |
-    <b>[BOT]</b> You (or this user) has forbidden to reply to his messages. Your message was not sent. 🤷‍♂️
+    <b>[BOT]</b> Kamu (or this user) telah dilarang membalas pesannya. Pesan kamu tidak terkirim. 🤷‍♂️
 
 harakiri:
   all: |
-    <b>[Bot]</b> #{{user.code_display}} {{user.nick}} makes harakiri and can't back to chat in {{user.harakiri_till|remaining(show_seconds=True)}}.
+    <b>[Bot]</b> #{{user.code_display}} {{user.nick}} melakukan harakiri dan tidak bisa kembali mengobrol {{user.harakiri_till|remaining(show_seconds=True)}}.
   text: |
-    <b>[BOT]</b> You make harakiri and you can back to chan in {{user.harakiri_till|remaining(show_seconds=True)}}.
+    <b>[BOT]</b> Kamu melakukan harakiri dan dapat kembali ke chan di {{user.harakiri_till|remaining(show_seconds=True)}}.
   fail: |
-    <b>[BOT]</b> Fail.
-    For this command to work enter /harakiri and ammount of minutes (from 1 to 10080) or R to play a game.
+    <b>[BOT]</b> Gagal.
+    Agar perintah ini berfungsi, masukkan /harakiri dan jumlah menit (from 1 to 10080) atau R untuk bermain game.
 nick:
   enter: |
-    <b>[BOT]</b> Your nick now - {{user.nick}}
+    <b>[BOT]</b> Nama kamu sekarang - {{user.nick}}
 
     Enter a new nick or press /cancel for cancel.
   all: |

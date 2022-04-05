@@ -241,32 +241,32 @@ poll:
     <b>[BOT]</b> {%if inline%}Inline poll{%else%}Poll{%endif%} harus memuat 2 - 10 opsi.
     Coba lagi atau klik /cancel untuk membatalkan.
   text_only: |
-    <b>[BOT]</b> Use text only.
+    <b>[BOT]</b> Gunakan teks saja.
   not_active_inline: |
-    Poll is not active.
+    Poll tidak aktif.
   not_active: |
-    <b>[BOT]</b> Poll is not active. To start your poll use a command /poll.
+    <b>[BOT]</b> Poll tidak aktif. Untuk memulai polling ketikan /poll.
   vote_ok: |
-    Your vote is counted.
+    Pilihanmu telah dihitung.
   done_fail: |
-    <b>[BOT]</b> Only moderator or a poll's owner can end a poll.
+    <b>[BOT]</b> Hanya moderator atau yang memulai poll yang bisa mengakhiri polling.
   alredy_active: |
-    <b>[BOT]</b> Poll is already active. #{{user.code_display}} {{user.nick}} put a question:
+    <b>[BOT]</b> Polling aktif. #{{user.code_display}} {{user.nick}} masukkan pertanyaan:
     <i>{{poll.question}}</i>
 
-    Already voted {{poll.answers|length}} of users.
-    To vote use a command /vote.
+    Sudah memilih {{poll.answers|length}} dari anggota.
+    Untuk memilih gunakan command /vote.
   in_progress: |
-    <b>[BOT]</b> Someone already started a poll but didn't stop it yet. You need to wait.
+    <b>[BOT]</b> Seseorang sudah memulai polling tetapi belum mengakhirinya. Kamu harus menunggu.
   vote_ended: |
-    This poll has ended.
+    Poll ini telah berakhir.
 
 list:
   kb:
-    more: ⏬ Show all ⏬
-    short: ⏫ Minimize ⏫
+    more: ⏬ Lihat semua ⏬
+    short: ⏫ Sembunnyikan ⏫
   text: |
-    <b>[BOT]</b> <i>{{online}}</i>(of <i>{{all}}</i>) users in chat:
+    <b>[BOT]</b> <i>{{online}}</i>(of <i>{{all}}</i>) anggota di sini:
 
     {%for u, m, h, d in users%}
     {{T('common/luna', minutes=m, hours=h, days=d)}}{{T('common/symbol', user=u)}}#{{u.code_display}} {{u.nick}}
